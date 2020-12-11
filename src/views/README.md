@@ -1,0 +1,13 @@
+1.[门禁统计](accessStatistics/accessStatistics.vue)
+2.[车辆统计](vehicleMonitoring/vehicleMonitoring.vue)
+3.[报事报修](reportAboutRepair/reportAboutRepair.vue)
+4.[设备统计](equipmentStatistics/equipmentStatistics.vue)
+5.[访客统计](visitorStatistics/visitorStatistics.vue)
+6.[梯控监测](ladderControlMonitoring/ladderControlMonitoring.vue)
+7.[物业缴费](propertyPayCost/propertyPayCost.vue)
+8.[报警事件](alarmEvents/alarmEvents.vue)
+9.[社区人口](communityPopulation/communityPopulation.vue)
+10.[智能家居](smartHome/smartHome.vue)
+
+11.[全国](national/national.vue)
+12.[社区](community/community.vue)
