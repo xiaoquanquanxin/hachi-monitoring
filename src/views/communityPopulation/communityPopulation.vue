@@ -1,5 +1,5 @@
 <template>
-    <div>社区人口</div>
+    <div>报警事件</div>
 </template>
 <script>
     export default {

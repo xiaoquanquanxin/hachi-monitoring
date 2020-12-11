@@ -21,7 +21,7 @@ export const syncRouteList = [
         children: [
             {
                 meta: {
-                    chName: '门禁统计'
+                    chName: '门禁统计',
                 },
                 path: '/community/accessStatistics',
                 name: 'AccessStatistics',
