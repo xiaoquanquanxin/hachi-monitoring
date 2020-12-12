@@ -17,7 +17,7 @@
             </a-row>
             <a-divider/>
             <p>报事报修类型数量统计</p>
-            <div>
+            <div class="statistical-list-wrap">
                 <a-row v-for="item in reportAboutRepairData.statisticalList"
                        :key="item.key"
                        type="flex"
@@ -102,22 +102,27 @@
         
         .type-list {
             padding: 0 24px;
-            
         }
         
-        .statistical-list {
-            line-height: 3em;
+        //  报事报修类型数量统计
+        .statistical-list-wrap {
+            height: 12em;
+            overflow-y: auto;
             
-            .grid-list {
-                margin-bottom: 5px;
+            .statistical-list {
+                line-height: 3em;
                 
-                &:last-child {
-                    margin-bottom: 0;
-                }
-                
-                .grid {
-                    width: 7px;
-                    height: 7px;
+                .grid-list {
+                    margin-bottom: 5px;
+                    
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    
+                    .grid {
+                        width: 7px;
+                        height: 7px;
+                    }
                 }
             }
         }
