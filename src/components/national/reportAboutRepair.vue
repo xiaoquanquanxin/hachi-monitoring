@@ -25,15 +25,19 @@
                        align="middle"
                        class="statistical-list">
                     <a-col :span="3">{{item.name}}</a-col>
-                    <a-col :span="16" :offset="1">
+                    <a-col :span="14" :offset="1">
                         <a-row type="flex" justify="space-around" align="middle" class="grid-list">
-                            <a-col v-for="item in 20">
-                                <div class="grid"></div>
+                            <a-col v-for="(_item,index) in item.list"
+                                   v-if="!(index%2)"
+                            >
+                                <div class="grid" :style="`background-color:${typeMap[_item]}`"></div>
                             </a-col>
                         </a-row>
                         <a-row type="flex" justify="space-around" align="middle" class="grid-list">
-                            <a-col v-for="item in 20">
-                                <div class="grid"></div>
+                            <a-col v-for="(_item,index) in item.list"
+                                   v-if="index%2"
+                            >
+                                <div class="grid" :style="`background-color:${typeMap[_item]}`"></div>
                             </a-col>
                         </a-row>
                     </a-col>
@@ -73,9 +77,24 @@
             this.typeList.push({ key: 2, label: '接待', type: 'reception', });
             this.typeList.push({ key: 3, label: '处理中', type: 'processing', });
             this.typeList.push({ key: 4, label: '已完成', type: 'completed', });
-            console.table(JSON.parse(JSON.stringify(this.reportAboutRepairData.statisticalList)));
+            //  20个格子图
+            this.reportAboutRepairData.statisticalList.forEach(item => {
+                this.calc(item);
+            });
         },
-        methods: {}
+        methods: {
+            calc(item){
+                const { total, reception, processing } = item;
+                const totalGrid = 40;
+                const _reception = (reception / total * totalGrid)|0;
+                const _processing = (processing / total * totalGrid)|0;
+                const list = new Array(40);
+                list.fill('reception', 0, _reception);
+                list.fill('processing', _reception, _reception + _processing);
+                list.fill('completed', _reception + _processing, 40);
+                item.list = list;
+            }
+        }
     };
 </script>
 <style scoped lang="less">
@@ -90,7 +109,7 @@
             line-height: 3em;
             
             .grid-list {
-                margin-bottom: 8px;
+                margin-bottom: 5px;
                 
                 &:last-child {
                     margin-bottom: 0;
@@ -99,7 +118,6 @@
                 .grid {
                     width: 7px;
                     height: 7px;
-                    background-color: orange;
                 }
             }
         }
