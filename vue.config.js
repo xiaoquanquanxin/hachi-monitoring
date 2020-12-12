@@ -1,18 +1,14 @@
-const path = require('path');
-
 module.exports = {
     css: {
         loaderOptions: {
             less: {
-                lessOptions: {
-                    modifyVars: {
-                        'primary-color': '#2d3237',
-                        'link-color': '#ffffff',
-                        'border-radius-base': '2px',
-                    },
-                    javascriptEnabled: true,
+                javascriptEnabled: true,
+                modifyVars: {
+                    'primary-color': '#1f2327',
+                    'link-color': '#1DA57A',
+                    'border-radius-base': '2px',
                 },
-            },
-        },
-    },
+            }
+        }
+    }
 };
