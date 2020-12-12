@@ -1,5 +1,5 @@
 <template>
-    <a-layout>
+    <a-layout class="main-layout">
         <a-layout-content class="layout-content">
             <router-view></router-view>
         </a-layout-content>
@@ -11,9 +11,13 @@
     };
 </script>
 <style scoped lang="less">
-    .layout-content {
-        margin: 0;
-        padding: 24px;
-        background: #fff;
+    .main-layout {
+        min-width: 1920px;
+        
+        .layout-content {
+            margin: 0;
+            padding: 24px;
+            background: #fff;
+        }
     }
 </style>

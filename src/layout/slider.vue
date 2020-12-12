@@ -52,11 +52,11 @@
             $route(val){
                 const { name, matched } = val;
                 this.selectedKeys = [name || ''];
-                console.log(matched);
+                //  console.log(matched);
                 if (matched.length > 1) {
                     this.defaultOpenKeys = [matched[0].name];
                 }
-                console.log(this.defaultOpenKeys);
+                //  console.log(this.defaultOpenKeys);
             }
         },
         data(){
