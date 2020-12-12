@@ -25,9 +25,14 @@
         </header>
         <BasicInfoStatistical data-msg="基本信息统计"
                               :basicInfoStatisticalData="basicInfoStatisticalData"
+                              v-show="false"
         />
         <CommunityWorkers data-msg="社区人员"
                           :communityWorkersData="communityWorkersData"
+                          v-show="false"
+        />
+        <ReportAboutRepair data-msg="报事报修"
+                          :reportAboutRepairData="reportAboutRepairData"
         />
     </div>
 </template>
@@ -35,10 +40,15 @@
     //  组件
     import BasicInfoStatistical from '@/components/national/basicInfoStatistical.vue';
     import CommunityWorkers from '@/components/national/communityWorkers.vue';
+    import ReportAboutRepair from '@/components/national/reportAboutRepair.vue';
 
     //  数据
     import { homePanelData } from '@/utils/constants';
-    import { basicInfoStatisticalData, communityWorkersData } from '@/utils/constants';
+    import {
+        basicInfoStatisticalData,
+        communityWorkersData,
+        reportAboutRepairData,
+    } from '@/utils/staticData';
 
     export default {
         name: 'national',
@@ -47,6 +57,8 @@
             BasicInfoStatistical,
             //  社区人员
             CommunityWorkers,
+            //  报事报修
+            ReportAboutRepair,
         },
         data(){
             return {
@@ -57,6 +69,8 @@
                 basicInfoStatisticalData,
                 //  社区人员
                 communityWorkersData,
+                //  报事报修
+                reportAboutRepairData,
             };
         },
         methods: {

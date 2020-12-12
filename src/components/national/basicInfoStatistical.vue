@@ -1,7 +1,8 @@
 <template>
     <a-card style="width: 445px"
             :bordered="false">
-        <span slot="title">基本信息统计</span>
+        <p>基本信息统计</p>
+        <a-divider/>
         <a-row type="flex" justify="space-between" align="middle">
             <div v-for="item in basicInfoStatisticalData"
                  :key="item.key"

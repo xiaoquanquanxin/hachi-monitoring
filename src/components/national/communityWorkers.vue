@@ -2,13 +2,14 @@
     <div class="community-workers">
         <a-card style="width: 445px"
                 :bordered="false">
-            <span slot="title">基本信息统计</span>
-            <p>社区人口类型占比饼图</p>
+            <p>社区人员</p>
+            <a-divider/>
+            <p>社区人口类型占比</p>
             <a-row type="flex" justify="space-between" align="middle">
                 <a-col :span="10" class="">
                     <div id="proportionOfCommunityPopulationType"
                          data-msg="社区人口类型占比饼图"
-                         style="height: 200px;"
+                         style="height: 180px;"
                     >
                     </div>
                 </a-col>
@@ -35,18 +36,18 @@
 </template>
 <script>
     import { init } from 'echarts';
+    import { c03FFCC, c929292, cFFFFFF } from '../../utils/constants';
 
     const option = {
         tooltip: false,
         title: {
-            text: '333',
             textStyle: {
-                color: '#FFFFFF',
+                color: cFFFFFF,
                 fontSize: '32px'
             },
-            subtext: '同名数量统计',
+            subtext: '总人数',
             subtextStyle: {
-                color: '#BBBBBB'
+                color: c929292,
             },
             left: 'center',
             top: '68px',
@@ -76,18 +77,23 @@
         computed: {
             //  总人数
             totalPeopld(){
-                this.communityWorkersData.reduce(((prev, item) => {
-                    return prev + item.num;
+                return this.communityWorkersData.reduce(((prev, item) => {
+                    return prev + item.value;
                 }), 0);
             }
         },
-        data(){
-            return {};
+        created(){
+            //  设置颜色
+            const colorList = [c03FFCC, cFFFFFF, c929292];
+            this.communityWorkersData.forEach((item, index) => {
+                item.type = colorList[index];
+            });
         },
         mounted(){
             const myEchart = init(document.getElementById('proportionOfCommunityPopulationType'));
             option.series[0].data = this.communityWorkersData;
             option.color = this.communityWorkersData.map(item => item.type);
+            option.title.text = this.totalPeopld;
             myEchart.setOption(option);
         },
         methods: {
