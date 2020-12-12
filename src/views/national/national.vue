@@ -32,7 +32,11 @@
                           v-show="false"
         />
         <ReportAboutRepair data-msg="报事报修"
-                          :reportAboutRepairData="reportAboutRepairData"
+                           :reportAboutRepairData="reportAboutRepairData"
+                           v-show="false"
+        />
+        <PropertyPayCost data-msg="报事报修"
+                           :propertyPayCostData="propertyPayCostData"
         />
     </div>
 </template>
@@ -41,6 +45,7 @@
     import BasicInfoStatistical from '@/components/national/basicInfoStatistical.vue';
     import CommunityWorkers from '@/components/national/communityWorkers.vue';
     import ReportAboutRepair from '@/components/national/reportAboutRepair.vue';
+    import PropertyPayCost from '@/components/national/propertyPayCost.vue';
 
     //  数据
     import { homePanelData } from '@/utils/constants';
@@ -48,6 +53,7 @@
         basicInfoStatisticalData,
         communityWorkersData,
         reportAboutRepairData,
+        propertyPayCostData,
     } from '@/utils/staticData';
 
     export default {
@@ -59,6 +65,8 @@
             CommunityWorkers,
             //  报事报修
             ReportAboutRepair,
+            //  物业缴费
+            PropertyPayCost,
         },
         data(){
             return {
@@ -71,6 +79,8 @@
                 communityWorkersData,
                 //  报事报修
                 reportAboutRepairData,
+                //  物业缴费
+                propertyPayCostData,
             };
         },
         methods: {

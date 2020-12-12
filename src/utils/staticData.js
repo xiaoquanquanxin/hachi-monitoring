@@ -63,9 +63,69 @@ export const reportAboutRepairData = {
             reception: 1,
             processing: 1,
             completed: 7,
+        },
+        {
+            name: '类型E',
+            total: 10,
+            reception: 2,
+            processing: 1,
+            completed: 7,
         }
     ]
 };
+//  物业缴费
+export const propertyPayCostData = [
+    {
+        name: '收费类型1',
+        paidIn: 55,
+        accountsReceivable: 332,
+    },
+    {
+        name: '收费类型2',
+        paidIn: 44,
+        accountsReceivable: 332,
+    },
+    {
+        name: '收费类型3',
+        paidIn: 124,
+        accountsReceivable: 232,
+    },
+    {
+        name: '收费类型4',
+        paidIn: 12,
+        accountsReceivable: 326,
+    },
+    {
+        name: '收费类型5',
+        paidIn: 132,
+        accountsReceivable: 382,
+    },
+    {
+        name: '收费类型6',
+        paidIn: 162,
+        accountsReceivable: 342,
+    },
+    {
+        name: '收费类型7',
+        paidIn: 142,
+        accountsReceivable: 325,
+    },
+    {
+        name: '收费类型2',
+        paidIn: 44,
+        accountsReceivable: 332,
+    },
+    {
+        name: '收费类型3',
+        paidIn: 124,
+        accountsReceivable: 232,
+    },
+    {
+        name: '收费类型4',
+        paidIn: 12,
+        accountsReceivable: 326,
+    },
+];
 
 
 
