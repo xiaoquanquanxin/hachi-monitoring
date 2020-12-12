@@ -24,29 +24,39 @@
             </a-row>
         </header>
         <BasicInfoStatistical data-msg="基本信息统计"
-                :basicInfoStatisticalData="basicInfoStatisticalData"
+                              :basicInfoStatisticalData="basicInfoStatisticalData"
+        />
+        <CommunityWorkers data-msg="社区人员"
+                          :communityWorkersData="communityWorkersData"
         />
     </div>
 </template>
 <script>
-    //  数据
-    import { homePanelData } from '@/utils/constants';
-    import { basicInfoStatisticalData } from '@/utils/constants';
     //  组件
     import BasicInfoStatistical from '@/components/national/basicInfoStatistical.vue';
+    import CommunityWorkers from '@/components/national/communityWorkers.vue';
+
+    //  数据
+    import { homePanelData } from '@/utils/constants';
+    import { basicInfoStatisticalData, communityWorkersData } from '@/utils/constants';
 
     export default {
         name: 'national',
         components: {
+            //  基本信息统计
             BasicInfoStatistical,
+            //  社区人员
+            CommunityWorkers,
         },
         data(){
             return {
                 //  可选的列表
                 homePanelData,
+                value: [],
                 //  基本信息统计
                 basicInfoStatisticalData,
-                value: [],
+                //  社区人员
+                communityWorkersData,
             };
         },
         methods: {

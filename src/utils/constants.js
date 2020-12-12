@@ -13,7 +13,14 @@ export const homePanelData = [
 ];
 //  基本信息统计
 export const basicInfoStatisticalData = [
-    { value: 1, key: 1, label: '社区数', num: 66, },
-    { value: 2, key: 2, label: '社区数', num: 388, },
-    { value: 3, key: 3, label: '社区数', num: 999, },
+    { key: 1, label: '社区数', value: 66, },
+    { key: 2, label: '社区数', value: 388, },
+    { key: 3, label: '社区数', value: 999, },
+];
+
+//  社区人员
+export const communityWorkersData = [
+    { key: 1, label: '业主', value: 3888, type: '#03FFCC' },
+    { key: 2, label: '租客', value: 2666, type: '#FFFFFF' },
+    { key: 3, label: '其他', value: 999, type: '#929292' },
 ];

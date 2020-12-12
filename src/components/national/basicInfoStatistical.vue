@@ -7,7 +7,7 @@
                  :key="item.key"
                  align="middle"
             >
-                <h2>{{item.num}}</h2>
+                <h2>{{item.value}}</h2>
                 <span>{{item.label}}</span>
             </div>
         </a-row>
