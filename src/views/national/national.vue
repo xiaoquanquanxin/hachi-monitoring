@@ -1,8 +1,65 @@
 <template>
-    <div>全国</div>
+    <div class="national">
+        <header data-msg="头部">
+            <a-row type="flex" justify="space-between" align="middle">
+                <a-icon type="menu"/>
+                <a>更多统计</a>
+                <a-col :span="4" v-show="false">
+                    <a-checkbox-group
+                            class="national-checkbox"
+                            :default-value="[1,2,3,4,5,6,7,8,9]"
+                            @change="onChange"
+                    >
+                        <a-row v-for="item in homePanelData"
+                               :key="item.key"
+                        >
+                            <a-col>
+                                <a-checkbox :value="item.value">
+                                    <span>{{ item.label }}</span>
+                                </a-checkbox>
+                            </a-col>
+                        </a-row>
+                    </a-checkbox-group>
+                </a-col>
+            </a-row>
+        </header>
+        <BasicInfoStatistical data-msg="基本信息统计"
+                :basicInfoStatisticalData="basicInfoStatisticalData"
+        />
+    </div>
 </template>
 <script>
+    //  数据
+    import { homePanelData } from '@/utils/constants';
+    import { basicInfoStatisticalData } from '@/utils/constants';
+    //  组件
+    import BasicInfoStatistical from '@/components/national/basicInfoStatistical.vue';
+
     export default {
-        name: 'national'
+        name: 'national',
+        components: {
+            BasicInfoStatistical,
+        },
+        data(){
+            return {
+                //  可选的列表
+                homePanelData,
+                //  基本信息统计
+                basicInfoStatisticalData,
+                value: [],
+            };
+        },
+        methods: {
+            onChange(){
+
+            }
+        }
     };
 </script>
+<style scoped lang="less">
+    .national {
+        .national-checkbox {
+            width: 100%;
+        }
+    }
+</style>

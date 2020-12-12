@@ -1,6 +1,6 @@
 <template>
     <a-layout id="components-layout-demo-custom-trigger">
-        <Slider/>
+<!--        <Slider/>-->
         <MainContent/>
     </a-layout>
 </template>
@@ -16,8 +16,15 @@
 
     };
 </script>
-<style scoped lang="less">
+<style lang="less">
+    // 引入官方提供的 less 样式入口文件
+    @import '~ant-design-vue/dist/antd.less';
+    // 用于覆盖上面定义的变量
+    @import '~@/css/color.less';
+    
     #components-layout-demo-custom-trigger {
+        background-color: #202428;
+        
         .trigger {
             font-size: 18px;
             line-height: 64px;

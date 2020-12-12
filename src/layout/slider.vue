@@ -78,7 +78,6 @@
     .layout-slider {
         overflow: auto;
         height: 100vh;
-        left: 0;
         
         /*图标logo*/
         
