@@ -20,9 +20,9 @@ export const basicInfoStatisticalData = [
 
 //  社区人员
 export const communityWorkersData = [
-    { key: 1, label: '业主', value: 3888, },
-    { key: 2, label: '租客', value: 2666, },
-    { key: 3, label: '其他', value: 999, },
+    { key: 1, name: '业主', value: 3888, },
+    { key: 2, name: '租客', value: 2666, },
+    { key: 3, name: '其他', value: 999, },
 ];
 
 //  报事报修
@@ -126,6 +126,18 @@ export const propertyPayCostData = [
         accountsReceivable: 326,
     },
 ];
+//  报警事件
+export const proportionOfAlarmTimeTodayData = {
+    lastWeek: 234,
+    list: [
+        { key: 1, name: 'A类型', value: 34, },
+        { key: 2, name: 'B类型', value: 23, },
+        { key: 3, name: 'C类型', value: 9, },
+        { key: 4, name: 'D类型', value: 12, },
+        { key: 5, name: 'E类型', value: 23, },
+    ]
+};
+
 
 
 

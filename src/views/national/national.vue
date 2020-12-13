@@ -36,7 +36,11 @@
                            v-show="false"
         />
         <PropertyPayCost data-msg="报事报修"
-                           :propertyPayCostData="propertyPayCostData"
+                         :propertyPayCostData="propertyPayCostData"
+                         v-show="false"
+        />
+        <AlarmEvents data-msg="社区人员"
+                     :proportionOfAlarmTimeTodayData="proportionOfAlarmTimeTodayData"
         />
     </div>
 </template>
@@ -46,14 +50,16 @@
     import CommunityWorkers from '@/components/national/communityWorkers.vue';
     import ReportAboutRepair from '@/components/national/reportAboutRepair.vue';
     import PropertyPayCost from '@/components/national/propertyPayCost.vue';
+    import AlarmEvents from '@/components/national/alarmEvents.vue';
 
     //  数据
-    import { homePanelData } from '@/utils/constants';
     import {
+        homePanelData,
         basicInfoStatisticalData,
         communityWorkersData,
         reportAboutRepairData,
         propertyPayCostData,
+        proportionOfAlarmTimeTodayData,
     } from '@/utils/staticData';
 
     export default {
@@ -67,6 +73,8 @@
             ReportAboutRepair,
             //  物业缴费
             PropertyPayCost,
+            //  报警事件
+            AlarmEvents,
         },
         data(){
             return {
@@ -81,6 +89,8 @@
                 reportAboutRepairData,
                 //  物业缴费
                 propertyPayCostData,
+                //  报警事件
+                proportionOfAlarmTimeTodayData,
             };
         },
         methods: {
@@ -97,3 +107,4 @@
         }
     }
 </style>
+

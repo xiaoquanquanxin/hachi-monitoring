@@ -29,6 +29,7 @@
                         <a-row type="flex" justify="space-around" align="middle" class="grid-list">
                             <a-col v-for="(_item,index) in item.list"
                                    v-if="!(index%2)"
+                                   :key="index"
                             >
                                 <div class="grid" :style="`background-color:${typeMap[_item]}`"></div>
                             </a-col>
@@ -36,6 +37,7 @@
                         <a-row type="flex" justify="space-around" align="middle" class="grid-list">
                             <a-col v-for="(_item,index) in item.list"
                                    v-if="index%2"
+                                   :key="index"
                             >
                                 <div class="grid" :style="`background-color:${typeMap[_item]}`"></div>
                             </a-col>

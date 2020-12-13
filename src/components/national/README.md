@@ -2,3 +2,4 @@
 [社区人员](communityWorkers.vue)
 [报事报修](reportAboutRepair.vue)
 [物业缴费](propertyPayCost.vue)
+[报警事件](alarmEvents.vue)

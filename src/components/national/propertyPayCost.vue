@@ -4,7 +4,6 @@
                 :bordered="false"
         >
             <p>物业缴费</p>
-            <p>物业缴费情况统计</p>
             <a-divider/>
             <a-row>
                 <a-col
@@ -90,15 +89,19 @@
                 name: '实收',
                 type: 'bar',
                 barMaxWidth: 8,
-                //  条柱圆角
-                barBorderRadius: [5, 5, 0, 0],
+                itemStyle: {
+                    //  条柱圆角
+                    barBorderRadius: [2, 2, 0, 0],
+                }
             },
             {
                 name: '应收',
                 type: 'bar',
                 barMaxWidth: 8,
-                //  条柱圆角
-                barBorderRadius: [5, 5, 0, 0],
+                itemStyle: {
+                    //  条柱圆角
+                    barBorderRadius: [2, 2, 0, 0],
+                }
             },
         ]
     };
