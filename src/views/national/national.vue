@@ -44,7 +44,11 @@
                      v-show="false"
         />
         <EntranceGuardSystem data-msg="门禁系统"
-                     :swipeModeData="swipeModeData"
+                             :swipeModeData="swipeModeData"
+                             v-show="false"
+        />
+        <YardSystem data-msg="车场系统"
+                    :proportionOfParkingSpacesData="proportionOfParkingSpacesData"
         />
     </div>
 </template>
@@ -56,6 +60,7 @@
     import PropertyPayCost from '@/components/national/propertyPayCost.vue';
     import AlarmEvents from '@/components/national/alarmEvents.vue';
     import EntranceGuardSystem from '@/components/national/entranceGuardSystem.vue';
+    import YardSystem from '@/components/national/yardSystem.vue';
 
     //  数据
     import {
@@ -66,6 +71,7 @@
         propertyPayCostData,
         proportionOfAlarmTimeTodayData,
         swipeModeData,
+        proportionOfParkingSpacesData,
     } from '@/utils/staticData';
 
     export default {
@@ -83,6 +89,8 @@
             AlarmEvents,
             //  门禁系统,
             EntranceGuardSystem,
+            //  车场系统
+            YardSystem,
         },
         data(){
             return {
@@ -101,6 +109,8 @@
                 proportionOfAlarmTimeTodayData,
                 //  门禁系统
                 swipeModeData,
+                //  车场系统
+                proportionOfParkingSpacesData,
             };
         },
         methods: {

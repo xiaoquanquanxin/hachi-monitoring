@@ -6,7 +6,7 @@
             <a-divider/>
             <p>社区人口类型占比</p>
             <a-row type="flex" justify="space-between" align="middle">
-                <a-col :span="10" class="">
+                <a-col :span="10">
                     <div id="proportionOfCommunityPopulationType"
                          data-msg="社区人口类型占比饼图"
                          style="height: 180px;"
@@ -22,7 +22,7 @@
                         <a-row type="flex" justify="space-between" align="middle">
                             <a-col :span="6" class="list-item-label">
                                 <a-row type="flex" justify="space-between" align="middle">
-                                    <div class="legend" :style="`backgroundColor:${item.bg}`"></div>
+                                    <div class="legend" :style="`backgroundColor:${item.color}`"></div>
                                     <span>{{item.label}}</span>
                                 </a-row>
                             </a-col>
@@ -86,13 +86,13 @@
             //  设置颜色
             const colorList = [c03FFCC, cFFFFFF, c929292];
             this.communityWorkersData.forEach((item, index) => {
-                item.bg = colorList[index];
+                item.color = colorList[index];
             });
         },
         mounted(){
             const myEchart = init(document.getElementById('proportionOfCommunityPopulationType'));
             option.series[0].data = this.communityWorkersData;
-            option.color = this.communityWorkersData.map(item => item.bg);
+            option.color = this.communityWorkersData.map(item => item.color);
             option.title.text = this.totalPeopld;
             myEchart.setOption(option);
         },

@@ -82,7 +82,7 @@
             const { list } = this.proportionOfAlarmTimeTodayData;
             option.series[0].data = list;
             option.color = list.map(item => item.bg);
-            console.log(JSON.parse(JSON.stringify(option.series[0].data)));
+            //  console.log(JSON.parse(JSON.stringify(option.series[0].data)));
             myEchart.setOption(option);
         },
     };

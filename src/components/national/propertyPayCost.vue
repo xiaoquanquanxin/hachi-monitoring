@@ -115,7 +115,6 @@
         mounted(){
             const myEchart = init(document.getElementById('propertyPaymentStatistics'));
             option.dataset.source = this.propertyPayCostData;
-            console.log(option);
             myEchart.setOption(option);
         }
     };

@@ -151,7 +151,25 @@ export const swipeModeData = {
         entranceGuard: [320, 332, 301, 334, 390, 330, 320, 150, 232, 201, 154, 190, 330, 410, 220, 182, 191, 234, 290, 330, 310, 120, 132, 101, 134, 90, 230, 210,],
     }
 };
-
+//  车场系统
+export const proportionOfParkingSpacesData = {
+    //  固定车
+    fixedCar: 89,
+    //  临时车
+    temporaryCar: 34,
+    //  车场数
+    numberOfYard: 78,
+    //  总车位
+    totalNumber: 78,
+    //  空车位
+    emptyCar: 48,
+    //  进场数
+    inputNumber: 30,
+    //  出场数
+    outputNumber: 23,
+    //  黑名单
+    blacklist: 30,
+};
 
 
 
