@@ -3,53 +3,50 @@
         <header data-msg="头部">
             <a-row type="flex" justify="space-between" align="middle">
                 <a-icon type="menu"/>
-                <a>更多统计</a>
-                <a-col :span="4" v-show="false">
+                <b @click="showMenuFn(true)">更多统计</b>
+            </a-row>
+            <a-row type="flex" justify="end" align="middle">
+                <div v-show="showMenu" class="menu-list">
+                    <a-row type="flex" justify="end" align="middle">
+                        <a-icon type="close" @click="showMenuFn(false)"/>
+                    </a-row>
                     <a-checkbox-group
-                            class="national-checkbox"
                             :default-value="[1,2,3,4,5,6,7,8,9]"
-                            @change="onChange"
+                            @change="onChangeFn"
                     >
                         <a-row v-for="item in homePanelData"
                                :key="item.key"
                         >
-                            <a-col>
+                            <a-col class="menu-list-item">
                                 <a-checkbox :value="item.value">
                                     <span>{{ item.label }}</span>
                                 </a-checkbox>
                             </a-col>
                         </a-row>
                     </a-checkbox-group>
-                </a-col>
+                </div>
             </a-row>
         </header>
         <BasicInfoStatistical data-msg="基本信息统计"
                               :basicInfoStatisticalData="basicInfoStatisticalData"
-                              v-show="false"
         />
         <CommunityWorkers data-msg="社区人员"
                           :communityWorkersData="communityWorkersData"
-                          v-show="false"
         />
         <ReportAboutRepair data-msg="报事报修"
                            :reportAboutRepairData="reportAboutRepairData"
-                           v-show="false"
         />
         <PropertyPayCost data-msg="报事报修"
                          :propertyPayCostData="propertyPayCostData"
-                         v-show="false"
         />
         <AlarmEvents data-msg="社区人员"
                      :proportionOfAlarmTimeTodayData="proportionOfAlarmTimeTodayData"
-                     v-show="false"
         />
         <EntranceGuardSystem data-msg="门禁系统"
                              :swipeModeData="swipeModeData"
-                             v-show="false"
         />
         <YardSystem data-msg="车场系统"
                     :proportionOfParkingSpacesData="proportionOfParkingSpacesData"
-                    v-show="false"
         />
         <EquipmentInformation data-msg="设备信息"
                               :equipmentInformationData="equipmentInformationData"
@@ -102,6 +99,8 @@
         },
         data(){
             return {
+                //  菜单是否展示
+                showMenu: true,
                 //  可选的列表
                 homePanelData,
                 value: [],
@@ -124,16 +123,31 @@
             };
         },
         methods: {
-            onChange(){
-
-            }
+            //  展示多选菜单
+            showMenuFn(showMenu){
+                this.showMenu = showMenu;
+            },
+            //  菜单变换
+            onChangeFn(val){
+                console.log(val);
+            },
         }
     };
 </script>
 <style scoped lang="less">
     .national {
-        .national-checkbox {
-            width: 100%;
+        .menu-list {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1em 1em 2em 2em;
+            top: 4em;
+            right: 1em;
+            /*菜单列表里的选项*/
+            
+            .menu-list-item {
+                width: 150px;
+                line-height: 2.6em;
+            }
         }
     }
 </style>
