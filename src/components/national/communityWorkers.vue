@@ -23,7 +23,7 @@
                             <a-col :span="6" class="list-item-label">
                                 <a-row type="flex" justify="space-between" align="middle">
                                     <div class="legend" :style="`backgroundColor:${item.color}`"></div>
-                                    <span>{{item.label}}</span>
+                                    <span>{{item.name}}</span>
                                 </a-row>
                             </a-col>
                             <span>{{item.value}}</span>

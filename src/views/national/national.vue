@@ -39,7 +39,7 @@
         <PropertyPayCost data-msg="物业缴费"
                          :propertyPayCostData="propertyPayCostData"
         />
-        <AlarmEvents data-msg="社区人员"
+        <AlarmEvents data-msg="报警事件"
                      :proportionOfAlarmTimeTodayData="proportionOfAlarmTimeTodayData"
         />
         <EntranceGuardSystem data-msg="门禁系统"

@@ -1,3 +1,6 @@
+/**
+ * 全国页
+ * **/
 //  首页面板的值
 export const homePanelData = [
     { value: 1, key: 1, label: '今日门禁', },
@@ -17,14 +20,12 @@ export const basicInfoStatisticalData = [
     { key: 2, label: '社区数', value: 388, },
     { key: 3, label: '社区数', value: 999, },
 ];
-
 //  社区人员
 export const communityWorkersData = [
     { key: 1, name: '业主', value: 3888, },
     { key: 2, name: '租客', value: 2666, },
     { key: 3, name: '其他', value: 999, },
 ];
-
 //  报事报修
 export const reportAboutRepairData = {
     //  总数
@@ -170,7 +171,6 @@ export const proportionOfParkingSpacesData = {
     //  黑名单
     blacklist: 30,
 };
-
 //  设备信息
 export const equipmentInformationData = [
     {
@@ -207,6 +207,15 @@ export const equipmentInformationData = [
     },
 ];
 
+/**
+ * 门禁统计页
+ * */
+//  开门方式占比
+export const proportionOfOpeningModeData = [
+    { name: '刷卡', value: 111, type: 'creditCard' },
+    { name: '刷脸', value: 123, type: 'faceScan' },
+    { name: '密码', value: 140, type: 'password' },
+];
 
 
 

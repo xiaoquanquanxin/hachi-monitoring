@@ -74,14 +74,14 @@
             //  设置颜色
             const colorList = [c03FFCC, c4e9a94, cFFFFFF, cCCCCCC, c4d4d4d];
             this.proportionOfAlarmTimeTodayData.list.forEach((item, index) => {
-                item.bg = colorList[index];
+                item.color = colorList[index];
             });
         },
         mounted(){
             const myEchart = init(document.getElementById('proportionOfAlarmTimeToday'));
             const { list } = this.proportionOfAlarmTimeTodayData;
             option.series[0].data = list;
-            option.color = list.map(item => item.bg);
+            option.color = list.map(item => item.color);
             //  console.log(JSON.parse(JSON.stringify(option.series[0].data)));
             myEchart.setOption(option);
         },
