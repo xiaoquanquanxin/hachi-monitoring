@@ -1,6 +1,6 @@
 <template>
     <div class="property-pay-cost">
-        <a-card style="width: 455px"
+        <a-card style="width: 445px"
                 :bordered="false"
         >
             <p>物业缴费</p>

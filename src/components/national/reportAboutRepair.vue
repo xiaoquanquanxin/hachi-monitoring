@@ -1,6 +1,6 @@
 <template>
     <div class="report-about-repair">
-        <a-card style="width: 455px"
+        <a-card style="width: 445px"
                 :bordered="false"
         >
             <p>报事报修</p>
