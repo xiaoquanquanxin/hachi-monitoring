@@ -7,8 +7,11 @@
                     <a-col :span="12">
                         <ProportionOfOpeningMode data-msg="开门方式占比"
                                                  :proportionOfOpeningModeData="proportionOfOpeningModeData"
+                                                 v-show="false"
                         ></ProportionOfOpeningMode>
-                        <div data-msg="人员类型占比"></div>
+                        <ProportionOfPersonnelTypes data-msg="人员类型占比"
+                                                    :proportionOfPersonnelTypesData="proportionOfPersonnelTypesData">
+                        </ProportionOfPersonnelTypes>
                     </a-col>
                     <a-col :span="12"></a-col>
                 </a-row>
@@ -24,10 +27,14 @@
 <script>
     import commonHeader from '@/components/commonHeader/commonHeader';
     import ProportionOfOpeningMode from '@/components/accessStatistics/proportionOfOpeningMode.vue';
+    import ProportionOfPersonnelTypes from '@/components/accessStatistics/proportionOfPersonnelTypes.vue';
 
     //  数据
     import {
+        //  开门方式占比
         proportionOfOpeningModeData,
+        //  人员类型占比
+        proportionOfPersonnelTypesData,
     } from '@/utils/staticData';
 
     export default {
@@ -36,11 +43,15 @@
             commonHeader,
             //  开门方式占比
             ProportionOfOpeningMode,
+            //  人员类型占比
+            ProportionOfPersonnelTypes,
         },
         data(){
             return {
                 //  开门方式占比
                 proportionOfOpeningModeData,
+                //  人员类型占比
+                proportionOfPersonnelTypesData,
             };
         },
     };

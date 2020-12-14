@@ -46,3 +46,5 @@ export const grid = {
     right: '1%',
     containLabel: true
 };
+//  不展示
+export const showFalse = { show: false };

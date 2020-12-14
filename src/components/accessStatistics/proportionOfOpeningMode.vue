@@ -30,6 +30,7 @@
                 color: cFFFFFF,
                 fontSize: '24px',
             },
+            subtext: '总计',
             subtextStyle: {
                 color: c929292,
             },
@@ -103,7 +104,6 @@
             option.title.text = this.proportionOfOpeningModeData.reduce((prev, current) => {
                 return prev + current.value;
             }, 0);
-            option.title.subtext = '总计';
             myEchart.setOption(option);
         },
         methods: {

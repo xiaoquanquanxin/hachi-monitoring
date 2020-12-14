@@ -216,6 +216,11 @@ export const proportionOfOpeningModeData = [
     { name: '刷脸', value: 123, type: 'faceScan' },
     { name: '密码', value: 140, type: 'password' },
 ];
+//  人员类型占比
+export const proportionOfPersonnelTypesData = [
+    { key: 1, name: '访客', value: 123, type: 'visitors' },
+    { key: 2, name: '常驻', value: 111, type: 'resident' },
+];
 
 
 
