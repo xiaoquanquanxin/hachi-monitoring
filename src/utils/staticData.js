@@ -171,6 +171,42 @@ export const proportionOfParkingSpacesData = {
     blacklist: 30,
 };
 
+//  设备信息
+export const equipmentInformationData = [
+    {
+        icon: 'home',
+        name: '门禁',
+        quantity: 1230,
+        online: 1230,
+        outline: 30,
+        onlineRate: '96%',
+    },
+    {
+        icon: 'camera',
+        name: '摄像头',
+        quantity: 1230,
+        online: 1230,
+        outline: 30,
+        onlineRate: '96%',
+    },
+    {
+        icon: 'number',
+        name: '梯控',
+        quantity: 1230,
+        online: 1230,
+        outline: 30,
+        onlineRate: '96%',
+    },
+    {
+        icon: 'car',
+        name: '无人车',
+        quantity: 1230,
+        online: 1230,
+        outline: 30,
+        onlineRate: '96%',
+    },
+];
+
 
 
 

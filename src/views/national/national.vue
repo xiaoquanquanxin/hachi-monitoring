@@ -49,7 +49,11 @@
         />
         <YardSystem data-msg="车场系统"
                     :proportionOfParkingSpacesData="proportionOfParkingSpacesData"
+                    v-show="false"
         />
+        <EquipmentInformation data-msg="设备信息"
+                              :equipmentInformationData="equipmentInformationData"
+        ></EquipmentInformation>
     </div>
 </template>
 <script>
@@ -61,6 +65,7 @@
     import AlarmEvents from '@/components/national/alarmEvents.vue';
     import EntranceGuardSystem from '@/components/national/entranceGuardSystem.vue';
     import YardSystem from '@/components/national/yardSystem.vue';
+    import EquipmentInformation from '@/components/national/equipmentInformation.vue';
 
     //  数据
     import {
@@ -72,6 +77,7 @@
         proportionOfAlarmTimeTodayData,
         swipeModeData,
         proportionOfParkingSpacesData,
+        equipmentInformationData,
     } from '@/utils/staticData';
 
     export default {
@@ -91,6 +97,8 @@
             EntranceGuardSystem,
             //  车场系统
             YardSystem,
+            //  设备信息
+            EquipmentInformation,
         },
         data(){
             return {
@@ -111,6 +119,8 @@
                 swipeModeData,
                 //  车场系统
                 proportionOfParkingSpacesData,
+                //  设备信息
+                equipmentInformationData,
             };
         },
         methods: {

@@ -5,3 +5,4 @@
 [报警事件](alarmEvents.vue)
 [门禁系统](entranceGuardSystem.vue)
 [车场系统](yardSystem.vue)
+[设备信息](equipmentInformation.vue)
