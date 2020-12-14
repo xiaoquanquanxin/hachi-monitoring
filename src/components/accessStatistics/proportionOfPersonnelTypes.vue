@@ -121,8 +121,8 @@
             const resident = this.proportionOfPersonnelTypesData[1];
             option.series[0].data = [visitor, Object.assign({}, resident, { itemStyle: { color: c4d4d4d } })];
             option.series[1].data = [resident, Object.assign({}, visitor, { itemStyle: { color: c4d4d4d } })];
-            console.log(option.series[0].data);
-            console.log(option.series[1].data);
+            //  console.log(option.series[0].data);
+            //  console.log(option.series[1].data);
             myEchart.setOption(option);
         },
         methods: {

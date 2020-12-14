@@ -1,0 +1,20 @@
+//	自定义tab切换
+//	选择label
+.custom-label {
+	position: relative;
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 30px;
+		height: 4px;
+		bottom: calc(-2em + 4px);
+		left: 50%;
+		margin-left: -15px;
+	}
+
+	&.active-label::after {
+		background-color: var(--cFFFFFF);
+	}
+}

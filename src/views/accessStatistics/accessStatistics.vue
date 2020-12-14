@@ -10,12 +10,16 @@
                                                  v-show="false"
                         ></ProportionOfOpeningMode>
                         <ProportionOfPersonnelTypes data-msg="人员类型占比"
-                                                    :proportionOfPersonnelTypesData="proportionOfPersonnelTypesData">
+                                                    :proportionOfPersonnelTypesData="proportionOfPersonnelTypesData"
+                                                    v-show="false"
+                        >
                         </ProportionOfPersonnelTypes>
                     </a-col>
                     <a-col :span="12"></a-col>
                 </a-row>
-                <div data-msg="开门次数统计"></div>
+                <StatisticsOfOpeningTimes data-msg="开门次数统计"
+                                          :statisticsOfOpeningTimesData="statisticsOfOpeningTimesData"
+                ></StatisticsOfOpeningTimes>
             </a-col>
             <a-col :span="8">
                 <div data-msg="门禁实时记录"></div>
@@ -28,6 +32,7 @@
     import commonHeader from '@/components/commonHeader/commonHeader';
     import ProportionOfOpeningMode from '@/components/accessStatistics/proportionOfOpeningMode.vue';
     import ProportionOfPersonnelTypes from '@/components/accessStatistics/proportionOfPersonnelTypes.vue';
+    import StatisticsOfOpeningTimes from '@/components/accessStatistics/statisticsOfOpeningTimes.vue';
 
     //  数据
     import {
@@ -35,6 +40,8 @@
         proportionOfOpeningModeData,
         //  人员类型占比
         proportionOfPersonnelTypesData,
+        //  开门次数统计
+        statisticsOfOpeningTimesData,
     } from '@/utils/staticData';
 
     export default {
@@ -45,6 +52,8 @@
             ProportionOfOpeningMode,
             //  人员类型占比
             ProportionOfPersonnelTypes,
+            //  开门次数统计
+            StatisticsOfOpeningTimes,
         },
         data(){
             return {
@@ -52,6 +61,8 @@
                 proportionOfOpeningModeData,
                 //  人员类型占比
                 proportionOfPersonnelTypesData,
+                //  开门次数统计
+                statisticsOfOpeningTimesData,
             };
         },
     };

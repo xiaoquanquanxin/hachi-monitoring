@@ -6,11 +6,11 @@
                 <div>门禁系统</div>
                 <a-col :span="7">
                     <a-row type="flex" justify="space-between" align="middle">
-                        <div :class="{'statistical-label':true,'active-label':activeIndex===0}"
+                        <div :class="{'custom-label':true,'active-label':activeIndex===0}"
                              @click="setActiveIndex(0)"
                         >趋势统计
                         </div>
-                        <div :class="{'statistical-label':true,'active-label':activeIndex===1}"
+                        <div :class="{'custom-label':true,'active-label':activeIndex===1}"
                              @click="setActiveIndex(1)"
                         >占比统计
                         </div>
@@ -163,23 +163,5 @@
     };
 </script>
 <style scoped lang="less">
-    //  选择label
-    .statistical-label {
-        position: relative;
-        
-        &::after {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 30px;
-            height: 4px;
-            bottom: calc(-2em + 4px);
-            left: 50%;
-            margin-left: -15px;
-        }
-        
-        &.active-label::after {
-            background-color: var(--cFFFFFF);
-        }
-    }
+    @import '~@/css/custom-tab.less';
 </style>

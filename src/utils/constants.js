@@ -48,3 +48,32 @@ export const grid = {
 };
 //  不展示
 export const showFalse = { show: false };
+//  折线图
+//  折线下区域的阴影
+export const areaStyle = {
+    opacity: 0.3,
+    shadowBlur: 10,
+    color: {
+        x: 0,
+        y: 0,
+        x2: 0,
+        y2: 1,
+        type: 'linear',
+        colorStops: [null, {
+            offset: 1,
+            color: 'transparent',
+        }]
+    }
+};
+//  折线的配置
+export const lineSeriesConfig = {
+    name: '刷脸',
+    type: 'line',
+    symbol: 'none',
+    //  平滑
+    smooth: true,
+    lineStyle: {
+        width: 1,
+    },
+    areaStyle,
+};
