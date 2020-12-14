@@ -36,7 +36,7 @@
         <ReportAboutRepair data-msg="报事报修"
                            :reportAboutRepairData="reportAboutRepairData"
         />
-        <PropertyPayCost data-msg="报事报修"
+        <PropertyPayCost data-msg="物业缴费"
                          :propertyPayCostData="propertyPayCostData"
         />
         <AlarmEvents data-msg="社区人员"
