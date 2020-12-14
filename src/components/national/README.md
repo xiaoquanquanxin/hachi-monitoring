@@ -3,3 +3,4 @@
 [报事报修](reportAboutRepair.vue)
 [物业缴费](propertyPayCost.vue)
 [报警事件](alarmEvents.vue)
+[门禁系统](entranceGuardSystem.vue)

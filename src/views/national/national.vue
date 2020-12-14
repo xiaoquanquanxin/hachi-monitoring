@@ -41,6 +41,10 @@
         />
         <AlarmEvents data-msg="社区人员"
                      :proportionOfAlarmTimeTodayData="proportionOfAlarmTimeTodayData"
+                     v-show="false"
+        />
+        <EntranceGuardSystem data-msg="门禁系统"
+                     :swipeModeData="swipeModeData"
         />
     </div>
 </template>
@@ -51,6 +55,7 @@
     import ReportAboutRepair from '@/components/national/reportAboutRepair.vue';
     import PropertyPayCost from '@/components/national/propertyPayCost.vue';
     import AlarmEvents from '@/components/national/alarmEvents.vue';
+    import EntranceGuardSystem from '@/components/national/entranceGuardSystem.vue';
 
     //  数据
     import {
@@ -60,6 +65,7 @@
         reportAboutRepairData,
         propertyPayCostData,
         proportionOfAlarmTimeTodayData,
+        swipeModeData,
     } from '@/utils/staticData';
 
     export default {
@@ -75,6 +81,8 @@
             PropertyPayCost,
             //  报警事件
             AlarmEvents,
+            //  门禁系统,
+            EntranceGuardSystem,
         },
         data(){
             return {
@@ -91,6 +99,8 @@
                 propertyPayCostData,
                 //  报警事件
                 proportionOfAlarmTimeTodayData,
+                //  门禁系统
+                swipeModeData,
             };
         },
         methods: {
@@ -107,4 +117,5 @@
         }
     }
 </style>
+
 
