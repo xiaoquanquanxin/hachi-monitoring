@@ -23,6 +23,7 @@
 </script>
 <style scoped lang="less">
     .common-header {
+        height: 6em;
         .back-btn {
             background-color: var(--c262A2E);
         }

@@ -2,18 +2,20 @@
     <div class="access-statistics" data-msg="门禁统计">
         <commonHeader/>
         <a-row type="flex" justify="space-between" align="middle">
-            <a-col :span="16" v-show="false">
+            <a-col :span="16">
                 <a-row type="flex" justify="space-between" align="middle">
                     <a-col :span="12">
                         <ProportionOfOpeningMode data-msg="开门方式占比"
                                                  :proportionOfOpeningModeData="proportionOfOpeningModeData"
                         />
+                    </a-col>
+                    <a-col :span="12">
                         <ProportionOfPersonnelTypes data-msg="人员类型占比"
                                                     :proportionOfPersonnelTypesData="proportionOfPersonnelTypesData"
                         />
                     </a-col>
-                    <a-col :span="12"></a-col>
                 </a-row>
+                <br>
                 <StatisticsOfOpeningTimes data-msg="开门次数统计"
                                           :statisticsOfOpeningTimesData="statisticsOfOpeningTimesData"
                 />

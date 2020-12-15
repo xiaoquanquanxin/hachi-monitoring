@@ -1,6 +1,6 @@
 <template>
     <div class="statistics-of-opening-times" data-msg="开门次数统计">
-        <a-card style="width: 1240px"
+        <a-card style="width: 1220px"
                 :bordered="false">
             <a-row type="flex" justify="space-between" align="middle">
                 <div>开门次数统计</div>
@@ -20,7 +20,7 @@
             <a-divider/>
             <div id="statisticsOfOpeningTimes"
                  data-msg="开门次数统计"
-                 style="height: 320px;"
+                 style="height: 360px;"
             ></div>
         </a-card>
     </div>
