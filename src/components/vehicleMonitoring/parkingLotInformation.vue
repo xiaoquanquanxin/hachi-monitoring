@@ -1,6 +1,6 @@
 <template>
     <div class="parking-lot-information" data-msg="停车场信息">
-        <a-card style="width: 632px"
+        <a-card style="width: 600px"
                 :bordered="false">
             <a-row type="flex" justify="space-between" align="middle">
                 <div>停车场信息</div>
@@ -60,7 +60,7 @@
                     </a-row>
                 </a-col>
             </a-row>
-            <a-row type="flex" justify="space-between" align="middle">
+            <a-row type="flex" justify="space-between" align="middle" class="information-chart">
                 <a-col :span="10">
                     <div id="parkingLotInformation"
                          data-msg="停车场信息饼图"
@@ -184,6 +184,7 @@
         //  主要信息
         .information-main {
             background-color: #2D3136;
+            margin-bottom: 2em;
             
             .information-label {
                 height: 100px;
@@ -220,21 +221,27 @@
             }
         }
         
-        .list-item {
-            line-height: 3em;
-            border-bottom: 1px solid var(--border-color-split);
+        .information-chart {
+            margin: 1em 0;
             
-            &:last-child {
-                border-bottom: none;
-            }
-            
-            .list-item-label {
-            
-            }
-            
-            .item-value, .item-percent {
-                font-size: 1.2em;
+            .list-item {
+                line-height: 3em;
+                border-bottom: 1px solid var(--border-color-split);
+                
+                &:last-child {
+                    border-bottom: none;
+                }
+                
+                .list-item-label {
+                
+                }
+                
+                .item-value, .item-percent {
+                    font-size: 1.2em;
+                }
             }
         }
+        
+        
     }
 </style>

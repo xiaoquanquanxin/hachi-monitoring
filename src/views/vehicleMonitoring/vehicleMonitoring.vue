@@ -2,17 +2,17 @@
     <div class="vehicle-monitoring" data-msg="车辆监控">
         <CommonHeader title="车辆监控"/>
         <a-row type="flex" justify="space-between" align="middle">
-            <a-col :span="4" v-show="false">
-                <CurrentVehicleType data-msg="当前车辆类型"/>
-            </a-col>
-            <a-col :span="4" v-show="false">
-                <CurrentVehicleDistribution data-msg="当前车辆分布"/>
-            </a-col>
+<!--            <a-col :span="4">-->
+<!--                <CurrentVehicleType data-msg="当前车辆类型"/>-->
+<!--            </a-col>-->
+<!--            <a-col :span="4">-->
+<!--                <CurrentVehicleDistribution data-msg="当前车辆分布"/>-->
+<!--            </a-col>-->
+<!--            <a-col :span="8">-->
+<!--                <ParkingLotInformation data-msg="停车场信息"/>-->
+<!--            </a-col>-->
             <a-col :span="8">
-                <ParkingLotInformation data-msg="停车场信息"/>
-            </a-col>
-            <a-col :span="8">
-                aaa
+                <FrequentApproach data-msg="频繁进场"/>
             </a-col>
         </a-row>
         <a-row type="flex" justify="space-between" align="middle">
@@ -30,6 +30,7 @@
     import CurrentVehicleType from '@/components/vehicleMonitoring/currentVehicleType.vue';
     import CurrentVehicleDistribution from '@/components/vehicleMonitoring/currentVehicleDistribution.vue';
     import ParkingLotInformation from '@/components/vehicleMonitoring/parkingLotInformation.vue';
+    import FrequentApproach from '@/components/vehicleMonitoring/frequentApproach.vue';
 
     export default {
         name: 'vehicleMonitoring',
@@ -41,6 +42,8 @@
             CurrentVehicleDistribution,
             //  听停车信息
             ParkingLotInformation,
+            //  频繁进场
+            FrequentApproach,
         },
         data(){
             return {};

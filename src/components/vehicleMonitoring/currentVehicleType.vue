@@ -1,6 +1,6 @@
 <template>
     <div class="current-vehicle-type" data-msg="当前车辆类型">
-        <a-card style="width: 296px"
+        <a-card style="width: 290px"
                 :bordered="false">
             <a-row type="flex" justify="space-between" align="middle">
                 <div class="card-component-title">当前车辆类型</div>

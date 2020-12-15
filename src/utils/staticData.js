@@ -353,5 +353,22 @@ export const parkingLotInformationData = {
     ]
 };
 
+//  频繁进场
+export const frequentApproachData = [
+    { type: 1, value: 120, name: '京A 32432' },
+    { type: 2, value: 200, name: '京A 32432' },
+    { type: 2, value: 150, name: '京A 32432' },
+    { type: 1, value: 80, name: '京A 32432' },
+    { type: 2, value: 70, name: '京A 32432' },
+    { type: 1, value: 110, name: '京A 32432' },
+    { type: 2, value: 70, name: '京A 32432' },
+    { type: 1, value: 80, name: '京A 32432' },
+    { type: 2, value: 150, name: '京A 32432' },
+    { type: 1, value: 80, name: '京A 32432' },
+    { type: 2, value: 70, name: '京A 32432' },
+    { type: 1, value: 110, name: '京A 32432' },
+    { type: 2, value: 70, name: '京A 32432' },
+    { type: 1, value: 80, name: '京A 32432' },
+];
 
 
