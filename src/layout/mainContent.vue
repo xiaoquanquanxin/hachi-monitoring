@@ -15,7 +15,7 @@
     .main-layout {
         overflow: auto;
         height: 100vh;
-        min-width: 1280px;
+        min-width: 1920px;
         
         .layout-content {
             margin: 0;
