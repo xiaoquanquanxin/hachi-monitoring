@@ -338,7 +338,20 @@ export const currentVehicleDistributionData = [
     { name: '常驻车', value: 3888, type: 'resident', key: 1 },
     { name: '临时车', value: 1288, type: 'temporary', key: 2 },
 ];
-
+//  停车场信息
+export const parkingLotInformationData = {
+    //  总收费金额
+    totalChargeAmount: 13242,
+    //  车位数金额
+    parkingSpacesAmount: 321,
+    //  收费金额
+    chargeAmount: 32,
+    list: [
+        { key: 1, name: '大型车', value: 23888, },
+        { key: 2, name: '小型车', value: 2888, },
+        { key: 3, name: '其他', value: 1888, },
+    ]
+};
 
 
 

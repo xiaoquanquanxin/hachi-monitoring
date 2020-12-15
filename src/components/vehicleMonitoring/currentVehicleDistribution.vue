@@ -99,10 +99,7 @@
             this.currentVehicleDistributionData.forEach((item, index) => {
                 item.color = colorList[index];
             });
-        },
-        mounted(){
-            const myEchart = init(document.getElementById('currentVehicleDistribution'));
-            option.color = this.currentVehicleDistributionData.map(item => item.color);
+            //  计算百分比
             this.currentVehicleDistributionData.forEach(item => {
                 item.percent = (item.value / this.totalVehicle).toFixed(2);
             });
@@ -110,13 +107,15 @@
             this.currentVehicleDistributionData.reduce(((prev, current) => {
                 return current.sumPercent = prev + +current.percent;
             }), 0);
+        },
+        mounted(){
+            const myEchart = init(document.getElementById('currentVehicleDistribution'));
+            option.color = this.currentVehicleDistributionData.map(item => item.color);
             //  设置半圆样式
             option.series[0].axisLine.lineStyle.color = this.currentVehicleDistributionData.map((item, index) => {
                 return [item.sumPercent, item.color];
             });
-//            console.log(option.series[0].axisLine.lineStyle.color);
             option.title.text = this.totalVehicle;
-//            console.log(JSON.parse(JSON.stringify(this.currentVehicleDistributionData)));
             myEchart.setOption(option);
         },
         methods: {
