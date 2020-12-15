@@ -378,3 +378,29 @@ export const vehicleApproachTrendData = {
     averageNumber: [92, 97, 53, 73, 18, 137, 128, 195, 19, 191, 135, 52, 226, 133, 56, 191, 30, 73, 92, 298, 300, 217, 9, 37, 26, 191, 132, 301],
 };
 
+//  7日手动开闸统计
+export const manualSwitchingStatisticsData = [
+    { 'date': '03:01', 'openedNumber': 120 },
+    { 'date': '03:02', 'openedNumber': 132 },
+    { 'date': '03:03', 'openedNumber': 101 },
+    { 'date': '03:04', 'openedNumber': 134 },
+    { 'date': '03:05', 'openedNumber': 90 },
+    { 'date': '03:06', 'openedNumber': 230 },
+    { 'date': '03:07', 'openedNumber': 210 },
+    { 'date': '03:08', 'openedNumber': 320 },
+    { 'date': '03:09', 'openedNumber': 332 },
+    { 'date': '03:10', 'openedNumber': 301 },
+    { 'date': '03:11', 'openedNumber': 334 },
+    { 'date': '03:12', 'openedNumber': 390 },
+    { 'date': '03:13', 'openedNumber': 330 },
+    { 'date': '03:14', 'openedNumber': 320 },
+    { 'date': '03:15', 'openedNumber': 150 },
+    { 'date': '03:16', 'openedNumber': 232 },
+    { 'date': '03:17', 'openedNumber': 201 },
+    { 'date': '03:18', 'openedNumber': 154 },
+    { 'date': '03:19', 'openedNumber': 190 },
+    { 'date': '03:20', 'openedNumber': 330 },
+    { 'date': '03:21', 'openedNumber': 410 },
+    { 'date': '03:22', 'openedNumber': 220 },
+    { 'date': '03:23', 'openedNumber': 182 },
+];

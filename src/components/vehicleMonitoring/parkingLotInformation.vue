@@ -3,7 +3,7 @@
         <a-card style="width: 600px"
                 :bordered="false">
             <a-row type="flex" justify="space-between" align="middle">
-                <div>停车场信息</div>
+                <div class="card-component-title">停车场信息</div>
                 <a-col :span="3">
                     <a-row type="flex" justify="space-between" align="middle">
                         <div :class="{'custom-label':true,'active-label':activeIndex===0}"

@@ -1,5 +1,5 @@
 <template>
-    <div class="frequent-approach" data-msg="停车场信息">
+    <div class="frequent-approach" data-msg="频繁进场">
         <a-card style="width: 600px"
                 :bordered="false">
             <a-row type="flex" justify="space-between" align="middle">
@@ -30,7 +30,7 @@
             </a-row>
             <a-divider/>
             <div id="frequentApproach"
-                 data-msg="停车场信息"
+                 data-msg="频繁进场"
                  style="height: 320px;"
             ></div>
         </a-card>

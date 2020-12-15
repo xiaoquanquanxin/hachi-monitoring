@@ -1,7 +1,7 @@
 <template>
     <div class="vehicle-monitoring" data-msg="车辆监控">
         <CommonHeader title="车辆监控"/>
-        <a-row type="flex" justify="space-between" align="middle" v-show="false">
+        <a-row type="flex" justify="space-between" align="middle">
             <a-col :span="4">
                 <CurrentVehicleType data-msg="当前车辆类型"/>
             </a-col>
@@ -15,12 +15,13 @@
                 <FrequentApproach data-msg="频繁进场"/>
             </a-col>
         </a-row>
+        <br>
         <a-row type="flex" justify="space-between" align="middle">
             <a-col :span="16">
                 <VehicleApproachTrend data-msg="车辆进场趋势"/>
             </a-col>
             <a-col :span="8">
-                12
+                <ManualSwitchingStatistics data-msg="7日手动开闸统计"/>
             </a-col>
         </a-row>
     </div>
@@ -32,6 +33,7 @@
     import ParkingLotInformation from '@/components/vehicleMonitoring/parkingLotInformation.vue';
     import FrequentApproach from '@/components/vehicleMonitoring/frequentApproach.vue';
     import VehicleApproachTrend from '@/components/vehicleMonitoring/vehicleApproachTrend.vue';
+    import ManualSwitchingStatistics from '@/components/vehicleMonitoring/manualSwitchingStatistics.vue';
 
     export default {
         name: 'vehicleMonitoring',
@@ -47,6 +49,8 @@
             FrequentApproach,
             //  车辆进场趋势
             VehicleApproachTrend,
+            //  7日手动开闸统计
+            ManualSwitchingStatistics
         },
         data(){
             return {};
