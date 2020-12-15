@@ -5,6 +5,7 @@ export const cCCCCCC = '#cccccc';
 export const c929292 = '#929292';
 export const c4d4d4d = '#4d4d4d';
 export const cBBC0F7 = '#BBC0F7';
+export const c4565B0 = '#4565B0';
 //  面板底色
 export const c2D3237 = '#2D3237';
 //  面板分割线

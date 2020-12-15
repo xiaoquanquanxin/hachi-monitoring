@@ -1,23 +1,23 @@
 <template>
     <div class="vehicle-monitoring" data-msg="车辆监控">
         <CommonHeader title="车辆监控"/>
-        <a-row type="flex" justify="space-between" align="middle">
-<!--            <a-col :span="4">-->
-<!--                <CurrentVehicleType data-msg="当前车辆类型"/>-->
-<!--            </a-col>-->
-<!--            <a-col :span="4">-->
-<!--                <CurrentVehicleDistribution data-msg="当前车辆分布"/>-->
-<!--            </a-col>-->
-<!--            <a-col :span="8">-->
-<!--                <ParkingLotInformation data-msg="停车场信息"/>-->
-<!--            </a-col>-->
+        <a-row type="flex" justify="space-between" align="middle" v-show="false">
+            <a-col :span="4">
+                <CurrentVehicleType data-msg="当前车辆类型"/>
+            </a-col>
+            <a-col :span="4">
+                <CurrentVehicleDistribution data-msg="当前车辆分布"/>
+            </a-col>
+            <a-col :span="8">
+                <ParkingLotInformation data-msg="停车场信息"/>
+            </a-col>
             <a-col :span="8">
                 <FrequentApproach data-msg="频繁进场"/>
             </a-col>
         </a-row>
         <a-row type="flex" justify="space-between" align="middle">
             <a-col :span="16">
-                12
+                <VehicleApproachTrend data-msg="车辆进场趋势"/>
             </a-col>
             <a-col :span="8">
                 12
@@ -31,6 +31,7 @@
     import CurrentVehicleDistribution from '@/components/vehicleMonitoring/currentVehicleDistribution.vue';
     import ParkingLotInformation from '@/components/vehicleMonitoring/parkingLotInformation.vue';
     import FrequentApproach from '@/components/vehicleMonitoring/frequentApproach.vue';
+    import VehicleApproachTrend from '@/components/vehicleMonitoring/vehicleApproachTrend.vue';
 
     export default {
         name: 'vehicleMonitoring',
@@ -44,6 +45,8 @@
             ParkingLotInformation,
             //  频繁进场
             FrequentApproach,
+            //  车辆进场趋势
+            VehicleApproachTrend,
         },
         data(){
             return {};

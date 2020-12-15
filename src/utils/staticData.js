@@ -332,7 +332,6 @@ export const currentVehicleTypeData = [
     { name: '外地车', value: 1888, type: 'foreignCar' },
     { name: '无牌车', value: 888, type: 'unlicensedCars' },
 ];
-
 //  当前车辆分布
 export const currentVehicleDistributionData = [
     { name: '常驻车', value: 3888, type: 'resident', key: 1 },
@@ -352,7 +351,6 @@ export const parkingLotInformationData = {
         { key: 3, name: '其他', value: 1888, },
     ]
 };
-
 //  频繁进场
 export const frequentApproachData = [
     { type: 1, value: 120, name: '京A 32432' },
@@ -370,5 +368,13 @@ export const frequentApproachData = [
     { type: 2, value: 70, name: '京A 32432' },
     { type: 1, value: 80, name: '京A 32432' },
 ];
-
+//  车辆进场趋势
+export const vehicleApproachTrendData = {
+    //  日期
+    timeList: ['03:01', '03:02', '03:03', '03:04', '03:05', '03:06', '03:07', '03:08', '03:09', '03:10', '03:11', '03:12', '03:13', '03:14', '03:15', '03:16', '03:17', '03:18', '03:19', '03:20', '03:21', '03:22', '03:23', '03:24', '03:25', '03:26', '03:27', '03:28'],
+    //  进场次数
+    approachNumber: [120, 132, 101, 134, 90, 230, 210, 320, 332, 301, 334, 390, 330, 320, 150, 232, 201, 154, 190, 330, 410, 220, 182, 191, 234, 290, 330, 310,],
+    //  平均值
+    averageNumber: [92, 97, 53, 73, 18, 137, 128, 195, 19, 191, 135, 52, 226, 133, 56, 191, 30, 73, 92, 298, 300, 217, 9, 37, 26, 191, 132, 301],
+};
 
