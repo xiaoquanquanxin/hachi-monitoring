@@ -6,7 +6,7 @@
                 <CurrentVehicleType/>
             </a-col>
             <a-col :span="4">
-<!--                <CurrentVehicleType/>-->
+                <CurrentVehicleDistribution/>
             </a-col>
             <a-col :span="8">
                 12
@@ -28,11 +28,16 @@
 <script>
     import CommonHeader from '@/components/commonHeader/commonHeader';
     import CurrentVehicleType from '@/components/vehicleMonitoring/currentVehicleType.vue';
+    import CurrentVehicleDistribution from '@/components/vehicleMonitoring/currentVehicleDistribution.vue';
+
     export default {
         name: 'vehicleMonitoring',
         components: {
             CommonHeader,
+            //  当前车辆类型
             CurrentVehicleType,
+            //  当前车辆分布
+            CurrentVehicleDistribution,
         },
         data(){
             return {};

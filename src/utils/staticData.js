@@ -333,7 +333,11 @@ export const currentVehicleTypeData = [
     { name: '无牌车', value: 888, type: 'unlicensedCars' },
 ];
 
-
+//  当前车辆分布
+export const currentVehicleDistributionData = [
+    { name: '常驻车', value: 3888, type: 'resident', key: 1 },
+    { name: '临时车', value: 1288, type: 'temporary', key: 2 },
+];
 
 
 

@@ -3,7 +3,7 @@
         <a-card style="width: 296px"
                 :bordered="false">
             <a-row type="flex" justify="space-between" align="middle">
-                <div>当前车辆类型</div>
+                <div class="card-component-title">当前车辆类型</div>
                 <a-select default-value="1" :bordered="false" @change="handleChangeFn">
                     <a-icon class="suffix-icon" type="caret-down" slot="suffixIcon"/>
                     <a-select-option value="1">今日</a-select-option>
@@ -129,11 +129,6 @@
                 }
                 
                 .list-item-label {
-                    //  颜色的小标记
-                    .legend {
-                        width: 8px;
-                        height: 2px;
-                    }
                 }
             }
         }

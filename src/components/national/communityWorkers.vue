@@ -119,11 +119,7 @@
                 }
                 
                 .list-item-label {
-                    //  颜色的小标记
-                    .legend {
-                        width: 8px;
-                        height: 2px;
-                    }
+              
                 }
             }
         }
