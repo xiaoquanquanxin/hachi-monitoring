@@ -21,7 +21,7 @@
 </template>
 <script>
     import { init } from 'echarts';
-    import { c03FFCC, cFFFFFF, cCCCCCC, c262a2e, c373a3e, c929292 } from '@/utils/constants';
+    import { c03FFCC, cFFFFFF, cCCCCCC, c2D3237, c373a3e, c929292 } from '@/utils/constants';
 
     const option = {
         tooltip: false,
@@ -78,7 +78,7 @@
                 },
                 itemStyle: {
                     borderWidth: 3,
-                    borderColor: c262a2e,
+                    borderColor: c2D3237,
                 },
             }
         ]
@@ -115,9 +115,6 @@
 </script>
 <style scoped lang="less">
     .proportion-of-opening-mode {
-        //  下拉标记
-        .suffix-icon {
-            color: var(--cB3B5B5);
-        }
+    
     }
 </style>

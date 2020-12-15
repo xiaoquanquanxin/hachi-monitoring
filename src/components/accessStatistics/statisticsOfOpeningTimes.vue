@@ -20,7 +20,7 @@
             <a-divider/>
             <div id="statisticsOfOpeningTimes"
                  data-msg="开门次数统计"
-                 style="height: 360px;"
+                 style="height: 350px;"
             ></div>
         </a-card>
     </div>
@@ -32,7 +32,7 @@
         cFFFFFF,
         cBBC0F7,
         c929292,
-        c262a2e,
+        c2D3237,
     } from '../../utils/constants';
     import {
         grid,

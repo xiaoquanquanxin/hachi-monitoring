@@ -134,10 +134,6 @@
 </script>
 <style scoped lang="less">
     .proportion-of-personnel-types {
-        //  下拉标记
-        .suffix-icon {
-            color: var(--cB3B5B5);
-        }
         
         //  列表
         .personnel-type-list {

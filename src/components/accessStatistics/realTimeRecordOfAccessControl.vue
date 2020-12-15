@@ -66,7 +66,7 @@
             margin-bottom: 0;
             
             .list-item {
-                background-color: var(--c262A2E);
+                background-color: var(--c2D3237);
                 margin-bottom: 1.4em;
                 padding: 1em;
                 width: 100%;

@@ -323,8 +323,15 @@ export const accessControlListData = [
     }
 ];
 
-
-
+/**
+ * 车辆监控页
+ * */
+//  当前车辆类型
+export const currentVehicleTypeData = [
+    { name: '本地车', value: 3888, type: 'localCar' },
+    { name: '外地车', value: 1888, type: 'foreignCar' },
+    { name: '无牌车', value: 888, type: 'unlicensedCars' },
+];
 
 
 

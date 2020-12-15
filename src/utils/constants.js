@@ -6,7 +6,7 @@ export const c929292 = '#929292';
 export const c4d4d4d = '#4d4d4d';
 export const cBBC0F7 = '#BBC0F7';
 //  面板底色
-export const c262a2e = '#262a2e';
+export const c2D3237 = '#2D3237';
 //  面板分割线
 export const c373a3e = '#373a3e';
 

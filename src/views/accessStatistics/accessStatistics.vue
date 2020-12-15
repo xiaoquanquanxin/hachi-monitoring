@@ -1,6 +1,6 @@
 <template>
     <div class="access-statistics" data-msg="门禁统计">
-        <commonHeader/>
+        <CommonHeader title="门禁统计"/>
         <a-row type="flex" justify="space-between" align="middle">
             <a-col :span="16">
                 <a-row type="flex" justify="space-between" align="middle">
@@ -32,7 +32,7 @@
     </div>
 </template>
 <script>
-    import commonHeader from '@/components/commonHeader/commonHeader';
+    import CommonHeader from '@/components/commonHeader/commonHeader';
     import ProportionOfOpeningMode from '@/components/accessStatistics/proportionOfOpeningMode.vue';
     import ProportionOfPersonnelTypes from '@/components/accessStatistics/proportionOfPersonnelTypes.vue';
     import StatisticsOfOpeningTimes from '@/components/accessStatistics/statisticsOfOpeningTimes.vue';
@@ -56,7 +56,7 @@
     export default {
         name: 'accessStatistics',
         components: {
-            commonHeader,
+            CommonHeader,
             //  开门方式占比
             ProportionOfOpeningMode,
             //  人员类型占比

@@ -27,7 +27,7 @@
 <style scoped lang="less">
     .access-control-list {
         width: 600px;
-        background-color: var(--c262A2E);
+        background-color: var(--c2D3237);
         padding: 0 4em;
         
         .item {
