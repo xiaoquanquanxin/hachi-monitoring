@@ -405,8 +405,9 @@ export const manualSwitchingStatisticsData = [
 ];
 
 /**
- * 报事报修类型占比与排序
+ * 报事报修
  * **/
+//  报事报修类型占比与排序
 export const proportionAndSortingOfReportingTypesData = {
     //  饼图数据
     pieData: [
@@ -434,3 +435,21 @@ export const proportionAndSortingOfReportingTypesData = {
     ]
 
 };
+//  实时记录
+export const realTimeRecordData = [
+    { key: 1, type: '安装门窗', location: '23号楼一单元123', name: '王某某', phoneNumber: 13535353333, time: 1608102899953 },
+    { key: 2, type: '安装门窗', location: '23号楼一单元123', name: '王某某', phoneNumber: 13535353333, time: 1608101869953 },
+    { key: 3, type: '安装门窗', location: '23号楼一单元123', name: '王某某', phoneNumber: 13535353333, time: 1608101839953 },
+    { key: 4, type: '安装门窗', location: '23号楼一单元123', name: '王某某', phoneNumber: 13535353333, time: 1608101809953 },
+    { key: 5, type: '安装门窗', location: '23号楼一单元123', name: '王某某', phoneNumber: 13535353333, time: 1608101779953 },
+    { key: 6, type: '安装门窗', location: '23号楼一单元123', name: '王某某', phoneNumber: 13535353333, time: 1608101749953 },
+    { key: 7, type: '安装门窗', location: '23号楼一单元123', name: '王某某', phoneNumber: 13535353333, time: 1608101719953 },
+    { key: 8, type: '安装门窗', location: '23号楼一单元123', name: '王某某', phoneNumber: 13535353333, time: 1608101689953 },
+    { key: 9, type: '安装门窗', location: '23号楼一单元123', name: '王某某', phoneNumber: 13535353333, time: 1608101659953 },
+    { key: 10, type: '安装门窗', location: '23号楼一单元123', name: '王某某', phoneNumber: 13535353333, time: 1608101629953 },
+    { key: 11, type: '安装门窗', location: '23号楼一单元123', name: '王某某', phoneNumber: 13535353333, time: 1608101599953 },
+    { key: 12, type: '安装门窗', location: '23号楼一单元123', name: '王某某', phoneNumber: 13535353333, time: 1608101569953 },
+    { key: 13, type: '安装门窗', location: '23号楼一单元123', name: '王某某', phoneNumber: 13535353333, time: 1608101549953 },
+    { key: 14, type: '安装门窗', location: '23号楼一单元123', name: '王某某', phoneNumber: 13535353333, time: 1608091549953 },
+    { key: 15, type: '安装门窗', location: '23号楼一单元123', name: '王某某', phoneNumber: 13535353333, time: 1608091149953 },
+];

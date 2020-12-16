@@ -1,7 +1,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import { syncRouteList } from './syncRouteList';
-import getPageTitle from '@/utils/utils';
+import { getPageTitle } from '@/utils/utils';
+
 Vue.use(VueRouter);
 
 const router = new VueRouter({
