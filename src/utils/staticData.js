@@ -466,3 +466,12 @@ export const percentageOfVisitorsByTypeData = [
     { key: 5, name: '亲属', value: 34, },
     { key: 6, name: '其他', value: 42, },
 ];
+//  访客分布量统计
+export const visitorDistributionStatisticsData = [
+    { key: 1, name: 'A门', max: 100, value: 90 },
+    { key: 2, name: 'B门', max: 100, value: 80 },
+    { key: 3, name: 'C门', max: 100, value: 80 },
+    { key: 4, name: 'D门', max: 100, value: 70 },
+    { key: 5, name: 'E门', max: 100, value: 30 },
+    { key: 6, name: 'F门', max: 100, value: 20 },
+];
