@@ -53,6 +53,14 @@ export const syncRouteList = [
             },
             {
                 meta: {
+                    chName: '访客统计'
+                },
+                path: '/community/visitorStatistics',
+                name: 'VisitorStatistics',
+                component: () => import(/* webpackChunkName: "visitorStatistics" */ '@/views/visitorStatistics/visitorStatistics'),
+            },
+            {
+                meta: {
                     chName: '梯控监测'
                 },
                 path: '/community/ladderControlMonitoring',

@@ -77,7 +77,10 @@
                 label: {
                     show: true,
                     color: cFFFFFF,
-                    formatter: '{per|{d}%}\n{name|{b}}{num|{c}}',
+                    formatter(item){
+                        const { percent, name, value } = item;
+                        return `{per|${percent|0}%}\n{name|${name}}\t{num|${value}}`;
+                    },
                     rich: {
                         per: {
                             color: cFFFFFF,

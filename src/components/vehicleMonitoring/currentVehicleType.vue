@@ -104,7 +104,7 @@
             option.color = this.currentVehicleTypeData.map(item => item.color);
             option.title.text = this.totalVehicle;
             this.currentVehicleTypeData.forEach(item => {
-                item.percent = `${(item.value / this.totalVehicle).toFixed(2)}%`;
+                item.percent = `${(item.value / this.totalVehicle).toFixed(0)}%`;
             });
             myEchart.setOption(option);
         },

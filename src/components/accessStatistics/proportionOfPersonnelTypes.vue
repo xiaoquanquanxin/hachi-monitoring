@@ -107,7 +107,7 @@
         created(){
             this.proportionOfPersonnelTypesData.forEach((item, index) => {
                 item.color = this.colorMap[item.type] || this.colorMap.other;
-                item.percent = `${(item.value / this.total * 100).toFixed(2)}%`;
+                item.percent = `${(item.value / this.total * 100).toFixed(0)}%`;
             });
         },
         mounted(){

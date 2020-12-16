@@ -453,3 +453,16 @@ export const realTimeRecordData = [
     { key: 14, type: '安装门窗', location: '23号楼一单元123', name: '王某某', phoneNumber: 13535353333, time: 1608091549953 },
     { key: 15, type: '安装门窗', location: '23号楼一单元123', name: '王某某', phoneNumber: 13535353333, time: 1608091149953 },
 ];
+
+/**
+ * 访客统计
+ * **/
+//  访客种类占比
+export const percentageOfVisitorsByTypeData = [
+    { key: 1, name: '外卖', value: 23, },
+    { key: 2, name: '家教', value: 91, },
+    { key: 3, name: '快递', value: 63, },
+    { key: 4, name: '保姆', value: 63, },
+    { key: 5, name: '亲属', value: 34, },
+    { key: 6, name: '其他', value: 42, },
+];
