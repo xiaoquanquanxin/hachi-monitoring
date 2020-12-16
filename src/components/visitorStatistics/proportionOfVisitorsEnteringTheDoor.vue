@@ -21,40 +21,42 @@
                 </a-col>
             </a-row>
             <a-divider/>
-            <a-row v-for="item in proportionOfVisitorsEnteringTheDoorData"
-                   :key="item.key"
-                   type="flex"
-                   justify="start"
-                   align="middle"
-                   class="statistical-list">
-                <a-col :span="5" class="item-name">{{item.name}}</a-col>
-                <a-col :span="12" :offset="1">
-                    <a-row type="flex" justify="space-around" align="middle" class="grid-list">
-                        <a-col v-for="(_item,index) in item.list"
-                               v-if="!(index%2)"
-                               :key="index"
-                        >
-                            <div class="grid"
-                                 :style="`background-color:${_item?colorTypeMap.c03FFCC:colorTypeMap.cFFFFFF}`"></div>
-                        </a-col>
-                    </a-row>
-                    <a-row type="flex" justify="space-around" align="middle" class="grid-list">
-                        <a-col v-for="(_item,index) in item.list"
-                               v-if="index%2"
-                               :key="index"
-                        >
-                            <div class="grid"
-                                 :style="`background-color:${_item?colorTypeMap.c03FFCC:colorTypeMap.cFFFFFF}`"></div>
-                        </a-col>
-                    </a-row>
-                </a-col>
-                <a-col :span="4" :offset="2">
-                    <a-row type="flex" justify="space-between" align="middle">
-                        <span class="item-num">{{item.num}}人</span>
-                        <span class="item-percent">{{item.percent}}%</span>
-                    </a-row>
-                </a-col>
-            </a-row>
+            <div class="statistical-list-wrap">
+                <a-row v-for="item in proportionOfVisitorsEnteringTheDoorData"
+                       :key="item.key"
+                       type="flex"
+                       justify="start"
+                       align="middle"
+                       class="statistical-list">
+                    <a-col :span="5" class="item-name">{{item.name}}</a-col>
+                    <a-col :span="12" :offset="1">
+                        <a-row type="flex" justify="space-around" align="middle" class="grid-list">
+                            <a-col v-for="(_item,index) in item.list"
+                                   v-if="!(index%2)"
+                                   :key="index"
+                            >
+                                <div class="grid"
+                                     :style="`background-color:${_item?colorTypeMap.c03FFCC:colorTypeMap.cFFFFFF}`"></div>
+                            </a-col>
+                        </a-row>
+                        <a-row type="flex" justify="space-around" align="middle" class="grid-list">
+                            <a-col v-for="(_item,index) in item.list"
+                                   v-if="index%2"
+                                   :key="index"
+                            >
+                                <div class="grid"
+                                     :style="`background-color:${_item?colorTypeMap.c03FFCC:colorTypeMap.cFFFFFF}`"></div>
+                            </a-col>
+                        </a-row>
+                    </a-col>
+                    <a-col :span="4" :offset="2">
+                        <a-row type="flex" justify="space-between" align="middle">
+                            <span class="item-num">{{item.num}}人</span>
+                            <span class="item-percent">{{item.percent}}%</span>
+                        </a-row>
+                    </a-col>
+                </a-row>
+            </div>
         </a-card>
     </div>
 </template>
@@ -114,28 +116,32 @@
     
     .proportion-of-visitors-entering-the-door {
         
-        .statistical-list {
-            line-height: 3em;
+        .statistical-list-wrap {
+            height: 320px;
             
-            .grid-list {
-                margin-bottom: 5px;
+            .statistical-list {
+                line-height: 3.3em;
                 
-                &:last-child {
-                    margin-bottom: 0;
+                .grid-list {
+                    margin-bottom: 5px;
+                    
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    
+                    .grid {
+                        width: 7px;
+                        height: 7px;
+                    }
                 }
                 
-                .grid {
-                    width: 7px;
-                    height: 7px;
+                .item-name, .item-num {
+                    color: var(--cB3B5B5);
                 }
-            }
-            
-            .item-name, .item-num {
-                color: var(--cB3B5B5);
-            }
-            
-            .item-percent {
-                font-size: 16px;
+                
+                .item-percent {
+                    font-size: 16px;
+                }
             }
         }
     }

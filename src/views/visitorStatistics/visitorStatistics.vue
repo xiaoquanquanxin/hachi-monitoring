@@ -1,13 +1,13 @@
 <template>
     <div class="visitor-statistics" data-msg="访客统计">
         <CommonHeader title="访客统计"/>
-        <a-row type="flex" justify="space-between" align="middle">
-<!--            <a-col :span="8">-->
-<!--                <PercentageOfVisitorsByType data-msg="访客种类占比"/>-->
-<!--            </a-col>-->
-<!--            <a-col :span="8">-->
-<!--                <VisitorDistributionStatistics data-msg="访客分布统计"/>-->
-<!--            </a-col>-->
+        <a-row type="flex" justify="space-between" align="middle" v-show="false">
+            <a-col :span="8">
+                <PercentageOfVisitorsByType data-msg="访客种类占比"/>
+            </a-col>
+            <a-col :span="8">
+                <VisitorDistributionStatistics data-msg="访客分布统计"/>
+            </a-col>
             <a-col :span="8">
                 <ProportionOfVisitorsEnteringTheDoor data-msg="访客进门方式占比"/>
             </a-col>

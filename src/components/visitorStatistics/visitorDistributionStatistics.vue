@@ -82,15 +82,16 @@
                 color: c03FFCC01,
             },
             data: [{}],
-            tooltip: {
-            
-            },
+            tooltip: {},
         }]
     };
     export default {
         name: 'visitorDistributionStatistics',
         computed: {
             totalNumber(){
+                if (!this.visitorDistributionStatisticsData) {
+                    return 0;
+                }
                 return this.visitorDistributionStatisticsData.reduce(((prev, item) => {
                     return prev + item.value;
                 }), 0);
