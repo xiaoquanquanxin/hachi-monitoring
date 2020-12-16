@@ -32,7 +32,6 @@
         cFFFFFF,
         cBBC0F7,
         c929292,
-        c2D3237,
     } from '../../utils/constants';
     import {
         grid,
@@ -40,7 +39,6 @@
         axisLine,
         axisLabel,
         axisTick,
-        areaStyle,
         lineSeriesConfig,
     } from '../../utils/constants';
 

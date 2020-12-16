@@ -48,7 +48,7 @@
 </template>
 <script>
     import { init } from 'echarts';
-    import { c03FFCC, cFFFFFF, c4d4d4d, c929292, cBBC0F7 } from '@/utils/constants';
+    import { c03FFCC, cFFFFFF, c4D4D4D, c929292, cBBC0F7 } from '@/utils/constants';
     import { showFalse } from '../../utils/constants';
 
     const option = {
@@ -100,7 +100,7 @@
                     //  常驻
                     resident: cBBC0F7,
                     //  其他
-                    other: c4d4d4d,
+                    other: c4D4D4D,
                 },
             };
         },
@@ -119,8 +119,8 @@
             const visitor = this.proportionOfPersonnelTypesData[0];
             //  常驻
             const resident = this.proportionOfPersonnelTypesData[1];
-            option.series[0].data = [visitor, Object.assign({}, resident, { itemStyle: { color: c4d4d4d } })];
-            option.series[1].data = [resident, Object.assign({}, visitor, { itemStyle: { color: c4d4d4d } })];
+            option.series[0].data = [visitor, Object.assign({}, resident, { itemStyle: { color: c4D4D4D } })];
+            option.series[1].data = [resident, Object.assign({}, visitor, { itemStyle: { color: c4D4D4D } })];
             //  console.log(option.series[0].data);
             //  console.log(option.series[1].data);
             myEchart.setOption(option);

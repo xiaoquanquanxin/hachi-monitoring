@@ -40,7 +40,7 @@
 <script>
     import { currentVehicleDistributionData } from '@/utils/staticData';
     import { init } from 'echarts';
-    import { c03FFCC, c929292, cFFFFFF, c2D3237, showFalse, } from '../../utils/constants';
+    import { c03FFCC, c929292, cFFFFFF, showFalse, } from '../../utils/constants';
 
     const option = {
         tooltip: false,

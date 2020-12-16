@@ -32,7 +32,7 @@
 </template>
 <script>
     import { init } from 'echarts';
-    import { c03FFCC, c929292, cFFFFFF, c4d4d4d } from '../../utils/constants';
+    import { c03FFCC, c929292, cFFFFFF, c4D4D4D } from '../../utils/constants';
 
     const option1 = {
         tooltip: false,
@@ -95,7 +95,7 @@
             } = this.proportionOfParkingSpacesData;
             //  固定车
             option1.title.subtext = '固定车';
-            option1.color = [c03FFCC, c4d4d4d];
+            option1.color = [c03FFCC, c4D4D4D];
             option1.title.text = fixedCar;
             option1.series[0].data = [
                 { name: '固定车', value: fixedCar, },
@@ -105,7 +105,7 @@
 
             //  临时车
             option2.title.subtext = '临时车';
-            option2.color = [c929292, c4d4d4d];
+            option2.color = [c929292, c4D4D4D];
             option2.title.text = temporaryCar;
             option2.series[0].data = [
                 { name: '临时车', value: temporaryCar, },

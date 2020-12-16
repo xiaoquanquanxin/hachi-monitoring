@@ -1,6 +1,6 @@
 1.[门禁统计](accessStatistics/accessStatistics.vue)
 2.[车辆统计](vehicleMonitoring/vehicleMonitoring.vue)
-3.[报事报修](reportAboutRepair/reportAboutRepair.vue)
+3.[报事报修页](reportAboutRepair/reportAboutRepair.vue)
 4.[设备统计](equipmentStatistics/equipmentStatistics.vue)
 5.[访客统计](visitorStatistics/visitorStatistics.vue)
 6.[梯控监测](ladderControlMonitoring/ladderControlMonitoring.vue)

@@ -18,7 +18,7 @@
     import { init } from 'echarts';
     import {
         c03FFCC,
-        c4d4d4d,
+        c4D4D4D,
     } from '../../utils/constants';
     import {
         grid,
@@ -53,7 +53,7 @@
                 type: 'bar',
                 barMaxWidth: 24,
                 itemStyle: {
-                    color: c4d4d4d,
+                    color: c4D4D4D,
                     //  条柱圆角
                     barBorderRadius: [2, 2, 0, 0],
                 },

@@ -21,7 +21,7 @@
 </template>
 <script>
     import { init } from 'echarts';
-    import { c03FFCC, cFFFFFF, cCCCCCC, c2D3237, c373a3e, c929292 } from '@/utils/constants';
+    import { c03FFCC, cFFFFFF, cCCCCCC, c25292E, c373A3E, c929292 } from '@/utils/constants';
 
     const option = {
         tooltip: false,
@@ -73,12 +73,12 @@
                     length: 16,
                     length2: 64,
                     lineStyle: {
-                        color: c373a3e,
+                        color: c373A3E,
                     }
                 },
                 itemStyle: {
                     borderWidth: 3,
-                    borderColor: c2D3237,
+                    borderColor: c25292E,
                 },
             }
         ]

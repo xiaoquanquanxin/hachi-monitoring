@@ -17,7 +17,7 @@
 </template>
 <script>
     import { init } from 'echarts';
-    import { c03FFCC, c4e9a94, cFFFFFF, cCCCCCC, c4d4d4d, c2D3237, c373a3e } from '@/utils/constants';
+    import { c03FFCC, c4e9a94, cFFFFFF, cCCCCCC, c4D4D4D, c373A3E } from '@/utils/constants';
 
     const option = {
         tooltip: false,
@@ -56,12 +56,12 @@
                     length: 8,
                     length2: 64,
                     lineStyle: {
-                        color: c373a3e,
+                        color: c373A3E,
                     }
                 },
                 itemStyle: {
                     borderWidth: 3,
-                    borderColor: c2D3237,
+                    borderColor: c25292E,
                 },
             }
         ]
@@ -72,7 +72,7 @@
         props: ['proportionOfAlarmTimeTodayData'],
         created(){
             //  设置颜色
-            const colorList = [c03FFCC, c4e9a94, cFFFFFF, cCCCCCC, c4d4d4d];
+            const colorList = [c03FFCC, c4e9a94, cFFFFFF, cCCCCCC, c4D4D4D];
             this.proportionOfAlarmTimeTodayData.list.forEach((item, index) => {
                 item.color = colorList[index];
             });

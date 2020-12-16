@@ -1,15 +1,19 @@
+export const cC2FFFA = '#C2FFFA';
 export const c03FFCC = '#03FFCC';
 export const c4e9a94 = '#4e9a94';
+export const c095B55 = '#095B55';
 export const cFFFFFF = '#FFFFFF';
+export const cBBBBBB = '#BBBBBB';
 export const cCCCCCC = '#cccccc';
 export const c929292 = '#929292';
-export const c4d4d4d = '#4d4d4d';
+export const c696969 = '#696969';
+export const c4D4D4D = '#4D4D4D';
 export const cBBC0F7 = '#BBC0F7';
 export const c4565B0 = '#4565B0';
 //  面板底色
-export const c2D3237 = '#2D3237';
+export const c25292E = '#25292E';
 //  面板分割线
-export const c373a3e = '#373a3e';
+export const c373A3E = '#373A3E';
 
 //  x轴
 export const axisLine = {

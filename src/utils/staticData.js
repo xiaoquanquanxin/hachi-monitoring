@@ -377,7 +377,6 @@ export const vehicleApproachTrendData = {
     //  平均值
     averageNumber: [92, 97, 53, 73, 18, 137, 128, 195, 19, 191, 135, 52, 226, 133, 56, 191, 30, 73, 92, 298, 300, 217, 9, 37, 26, 191, 132, 301],
 };
-
 //  7日手动开闸统计
 export const manualSwitchingStatisticsData = [
     { 'date': '03:01', 'openedNumber': 120 },
@@ -404,3 +403,34 @@ export const manualSwitchingStatisticsData = [
     { 'date': '03:22', 'openedNumber': 220 },
     { 'date': '03:23', 'openedNumber': 182 },
 ];
+
+/**
+ * 报事报修类型占比与排序
+ * **/
+export const proportionAndSortingOfReportingTypesData = {
+    //  饼图数据
+    pieData: [
+        { key: 1, name: '可疑人员', value: 34, },
+        { key: 2, name: '高空抛物', value: 23, },
+        { key: 3, name: '门口机破坏', value: 11, },
+        { key: 4, name: '燃气报警', value: 12, },
+        { key: 5, name: '闯入报警', value: 23, },
+        { key: 6, name: '儿童落单', value: 45, },
+        { key: 7, name: '紧急救助', value: 65, },
+        { key: 8, name: '姿态异常', value: 22, },
+        { key: 9, name: '烟感报警', value: 42, },
+    ],
+    //  列表数据
+    list: [
+        { key: 1, name: '安装门窗', value: 34, },
+        { key: 2, name: '电路故障', value: 23, },
+        { key: 3, name: '门禁故障', value: 9, },
+        { key: 4, name: '网络故障', value: 12, },
+        { key: 5, name: '住户信息更新', value: 23, },
+        { key: 6, name: '燃气故障', value: 45, },
+        { key: 7, name: '排水系统故障', value: 65, },
+        { key: 8, name: '小区设施故障', value: 22, },
+        { key: 9, name: '小区基建问题', value: 42, },
+    ]
+
+};
