@@ -17,7 +17,7 @@
                     </a-row>
                 </a-col>
                 <a-col :span="3">
-                    <span class="total-label">总数：</span>{{1}}
+                    <span class="total-label">总数：</span>{{totalNumber}}
                 </a-col>
             </a-row>
             <a-divider/>

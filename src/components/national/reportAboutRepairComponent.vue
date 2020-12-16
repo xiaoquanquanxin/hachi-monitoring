@@ -11,7 +11,7 @@
                      :key="item.key"
                      align="middle"
                 >
-                    <h2 :style="`color:${typeMap[item.type]}`">{{valueMap[item.type]}}</h2>
+                    <h2 :style="`color:${colorTypeMap[item.type]}`">{{valueMap[item.type]}}</h2>
                     <span>{{item.label}}</span>
                 </div>
             </a-row>
@@ -32,7 +32,7 @@
                                        v-if="!(index%2)"
                                        :key="index"
                                 >
-                                    <div class="grid" :style="`background-color:${typeMap[_item]}`"></div>
+                                    <div class="grid" :style="`background-color:${colorTypeMap[_item]}`"></div>
                                 </a-col>
                             </a-row>
                             <a-row type="flex" justify="space-around" align="middle" class="grid-list">
@@ -40,7 +40,7 @@
                                        v-if="index%2"
                                        :key="index"
                                 >
-                                    <div class="grid" :style="`background-color:${typeMap[_item]}`"></div>
+                                    <div class="grid" :style="`background-color:${colorTypeMap[_item]}`"></div>
                                 </a-col>
                             </a-row>
                         </a-col>
@@ -63,7 +63,7 @@
             return {
                 reportAboutRepairData: null,
                 //  颜色关于类型的map
-                typeMap: {
+                colorTypeMap: {
                     total: cFFFFFF,
                     reception: c03FFCC,
                     processing: cBBC0F7,
@@ -92,8 +92,8 @@
             calc(item){
                 const { total, reception, processing } = item;
                 const totalGrid = 40;
-                const _reception = (reception / total * totalGrid)|0;
-                const _processing = (processing / total * totalGrid)|0;
+                const _reception = Math.ceil(reception / total * totalGrid);
+                const _processing = Math.ceil(processing / total * totalGrid);
                 const list = new Array(40);
                 list.fill('reception', 0, _reception);
                 list.fill('processing', _reception, _reception + _processing);

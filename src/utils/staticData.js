@@ -475,3 +475,13 @@ export const visitorDistributionStatisticsData = [
     { key: 5, name: 'E门', max: 100, value: 30 },
     { key: 6, name: 'F门', max: 100, value: 20 },
 ];
+//  访客进门方式占比
+export const proportionOfVisitorsEnteringTheDoorData = [
+    { key: 1, name: '人脸识别', num: 1223, },
+    { key: 2, name: '指纹', num: 523, },
+    { key: 3, name: '刷卡识别', num: 323, },
+    { key: 4, name: '二维码识别', num: 123, },
+    { key: 5, name: '门口机呼叫识别', num: 65, },
+    { key: 6, name: '密码开门', num: 24, },
+    { key: 7, name: '其他', num: 8, },
+];
