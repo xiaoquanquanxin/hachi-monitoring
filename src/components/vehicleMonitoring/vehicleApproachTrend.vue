@@ -80,6 +80,7 @@
                 componentTypeMap: {
                     1: { name: '车辆进场趋势', width: 1220 },
                     2: { name: '报事报修数目统计', width: 1360 },
+                    3: { name: '当前社区访客量统计', width: 1360 },
                 },
                 //  激活的面板
                 activeIndex: 0,
@@ -95,7 +96,8 @@
             const { timeList, approachNumber, averageNumber } = this.vehicleApproachTrendData;
             xAxis.data = timeList;
             const data0 = option.series[0];
-            data0.name = '进场次数';
+            const data1 = option.series[1];
+
             data0.lineStyle.color = c03FFCC;
             data0.areaStyle.color.colorStops[0] = {
                 offset: 0,
@@ -103,15 +105,30 @@
             };
             data0.data = approachNumber;
 
-            const data1 = option.series[1];
-            data1.name = '平均值';
             data1.lineStyle.color = c4565B0;
-            data1.lineStyle.type = 'dashed';
             data1.areaStyle.color.colorStops[0] = {
                 offset: 0,
                 color: c4565B0,
             };
             data1.data = averageNumber;
+
+            switch (+this.componentType) {
+                case 1:
+                    data0.name = '进场次数';
+                    data1.name = '平均值';
+                    data1.lineStyle.type = 'dashed';
+                    break;
+                case 2:
+                    data0.name = '';
+                    data1.name = '';
+                    data1.lineStyle.type = 'dashed';
+                    break;
+                case 3:
+                    data0.name = '快递';
+                    data1.name = '保姆';
+                    break;
+            }
+
             myEchart.setOption(option);
         },
         methods: {

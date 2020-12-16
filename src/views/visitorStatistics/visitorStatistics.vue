@@ -15,6 +15,7 @@
         <br>
         <a-row type="flex" justify="space-between" align="middle">
             <a-col :span="16">
+                <VehicleApproachTrend componentType="3" data-msg="当前社区访客量统计"/>
             </a-col>
             <a-col :span="8">
             </a-col>
@@ -27,6 +28,7 @@
     import VisitorDistributionStatistics from '@/components/visitorStatistics/visitorDistributionStatistics.vue';
     import ProportionOfVisitorsEnteringTheDoor
         from '@/components/visitorStatistics/proportionOfVisitorsEnteringTheDoor.vue';
+    import VehicleApproachTrend from '@/components/vehicleMonitoring/vehicleApproachTrend.vue';
 
     export default {
         name: 'visitorStatistics',
@@ -38,6 +40,8 @@
             VisitorDistributionStatistics,
             //  访客进门方式占比
             ProportionOfVisitorsEnteringTheDoor,
+            //  报事报修数目统计
+            VehicleApproachTrend,
         },
         data(){
             return {};
