@@ -1,14 +1,14 @@
 <template>
-    <div class="vehicle-approach-trend" data-msg="车辆进场趋势">
-        <a-card style="width: 1220px"
+    <div class="vehicle-approach-trend" :data-msg="componentTypeMap[componentType].name">
+        <a-card :style="`width: ${componentTypeMap[componentType].width}px`"
                 :bordered="false">
             <a-row type="flex" justify="space-between" align="middle">
-                <div class="card-component-title">开门次数统计</div>
+                <div class="card-component-title">{{componentTypeMap[componentType].name}}</div>
                 <a-col :span="2">
                     <a-row type="flex" justify="space-between" align="middle">
                         <div :class="{'custom-label':true,'active-label':activeIndex===0}"
                              @click="setActiveIndex(0)"
-                        >日
+                        >今日
                         </div>
                         <div :class="{'custom-label':true,'active-label':activeIndex===1}"
                              @click="setActiveIndex(1)"
@@ -19,7 +19,7 @@
             </a-row>
             <a-divider/>
             <div id="vehicleApproachTrend"
-                 data-msg="车辆进场趋势"
+                 :data-msg="componentTypeMap[componentType].name"
                  style="height: 350px;"
             ></div>
         </a-card>
@@ -70,10 +70,17 @@
             JSON.parse(JSON.stringify(lineSeriesConfig)),
         ]
     };
+
     export default {
         name: 'vehicleApproachTrend',
+        props: ['componentType'],
         data(){
             return {
+                //  组件的类型map
+                componentTypeMap: {
+                    1: { name: '车辆进场趋势', width: 1220 },
+                    2: { name: '报事报修数目统计', width: 1360 },
+                },
                 //  激活的面板
                 activeIndex: 0,
                 vehicleApproachTrendData: null,

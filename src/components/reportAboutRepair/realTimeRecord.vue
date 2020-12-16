@@ -76,7 +76,7 @@
             .list {
                 width: calc(100% + 2em);
                 padding-right: 2em;
-                height: 27em;
+                height: 24em;
                 overflow-y: auto;
                 
                 .list-item {

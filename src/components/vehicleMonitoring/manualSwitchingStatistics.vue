@@ -1,5 +1,5 @@
 <template>
-    <div class="manual-switching-statistics" data-msg="车辆进场趋势">
+    <div class="manual-switching-statistics" data-msg="7日手动开闸统计">
         <a-card style="width: 600px"
                 :bordered="false">
             <a-row type="flex" justify="space-between" align="middle">

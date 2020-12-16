@@ -17,7 +17,7 @@
 </template>
 <script>
     import { init } from 'echarts';
-    import { c03FFCC, c4e9a94, cFFFFFF, cCCCCCC, c4D4D4D, c373A3E } from '@/utils/constants';
+    import { c03FFCC, c4e9a94, cFFFFFF, cCCCCCC, c4D4D4D, c373A3E, c25292E } from '@/utils/constants';
 
     const option = {
         tooltip: false,

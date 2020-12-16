@@ -18,7 +18,7 @@
         <br>
         <a-row type="flex" justify="space-between" align="middle">
             <a-col :span="16">
-                <VehicleApproachTrend data-msg="车辆进场趋势"/>
+                <VehicleApproachTrend componentType="1" data-msg="车辆进场趋势"/>
             </a-col>
             <a-col :span="8">
                 <ManualSwitchingStatistics data-msg="7日手动开闸统计"/>

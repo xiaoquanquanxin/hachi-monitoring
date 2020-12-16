@@ -1,5 +1,5 @@
 <template>
-    <div class="report-about-repair">
+    <div class="report-about-repair-component">
         <a-card style="width: 445px"
                 :bordered="false"
         >
@@ -55,12 +55,13 @@
 </template>
 <script>
     import { c03FFCC, c929292, cFFFFFF, cBBC0F7 } from '../../utils/constants';
+    import { reportAboutRepairData } from '../../utils/staticData';
 
     export default {
-        name: 'reportAboutRepair',
-        props: ['reportAboutRepairData'],
+        name: 'reportAboutRepairComponent',
         data(){
             return {
+                reportAboutRepairData: null,
                 //  颜色关于类型的map
                 typeMap: {
                     total: cFFFFFF,
@@ -74,6 +75,7 @@
             };
         },
         created(){
+            this.reportAboutRepairData = reportAboutRepairData;
             //  基础数据
             const { total, reception, processing, completed } = this.reportAboutRepairData;
             this.valueMap = { total, reception, processing, completed };
@@ -102,7 +104,7 @@
     };
 </script>
 <style scoped lang="less">
-    .report-about-repair {
+    .report-about-repair-component {
         
         .type-list {
             padding: 0 24px;
