@@ -1,7 +1,7 @@
 <template>
     <div class="ladder-control-monitoring" data-msg="梯控监测">
         <CommonHeader title="梯控监测"/>
-        <a-row type="flex" justify="space-between" align="middle">
+        <a-row type="flex" justify="space-between" align="middle" v-show="false">
             <a-col :span="8">
                 <LadderControlCallType data-msg="梯控呼叫类型"/>
             </a-col>
@@ -12,6 +12,15 @@
                 <LadderControlOperationRanking data-msg="梯控运行工作排名"/>
             </a-col>
         </a-row>
+        <br>
+        <a-row type="flex" justify="space-between" align="middle">
+            <a-col :span="16" v-show="false">
+                <VehicleApproachTrend componentType="4" data-msg="梯控运行工作量情况"/>
+            </a-col>
+            <a-col :span="8">
+                <OperationConditionOfLadderControl data-msg="梯控运行情况"/>
+            </a-col>
+        </a-row>
     </div>
 </template>
 <script>
@@ -19,6 +28,9 @@
     import LadderControlCallType from '@/components/ladderControlMonitoring/ladderControlCallType.vue';
     import CurrentLadderControlStatus from '@/components/ladderControlMonitoring/currentLadderControlStatus.vue';
     import LadderControlOperationRanking from '@/components/ladderControlMonitoring/ladderControlOperationRanking.vue';
+    import VehicleApproachTrend from '@/components/vehicleMonitoring/vehicleApproachTrend.vue';
+    import OperationConditionOfLadderControl
+        from '@/components/ladderControlMonitoring/operationConditionOfLadderControl.vue';
 
     export default {
         name: 'ladderControlMonitoring',
@@ -30,6 +42,10 @@
             CurrentLadderControlStatus,
             //  梯控运行工作排名
             LadderControlOperationRanking,
+            //  梯控运行工作量情况
+            VehicleApproachTrend,
+            //  梯控运行情况
+            OperationConditionOfLadderControl,
         }
     };
 </script>
