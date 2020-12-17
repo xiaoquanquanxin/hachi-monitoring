@@ -485,3 +485,125 @@ export const proportionOfVisitorsEnteringTheDoorData = [
     { key: 6, name: '密码开门', num: 24, },
     { key: 7, name: '其他', num: 8, },
 ];
+//  频繁到访统计
+export const statisticsOnFrequentVisitsData = {
+    //  访客到访频繁排名
+    list1: [
+        {
+            key: 1,
+            name: '李铁柱',
+            type: '保姆',
+            num: 12,
+            img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1608213417332&di=0ed827c48c56e436cefe21b278d9b3fb&imgtype=0&src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201603%2F10%2F20160310084144_BuaAi.thumb.400_0.jpeg'
+        },
+        {
+            key: 2,
+            name: '赵建国',
+            type: '美团外卖',
+            num: 232,
+            img: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2270457922,3670335519&fm=26&gp=0.jpg'
+        },
+        {
+            key: 3,
+            name: '李铁柱',
+            type: '保姆',
+            num: 12,
+            img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1608213417332&di=0ed827c48c56e436cefe21b278d9b3fb&imgtype=0&src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201603%2F10%2F20160310084144_BuaAi.thumb.400_0.jpeg'
+        },
+        {
+            key: 4,
+            name: '赵建国',
+            type: '美团外卖',
+            num: 232,
+            img: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2270457922,3670335519&fm=26&gp=0.jpg'
+        },
+        {
+            key: 5,
+            name: '李铁柱',
+            type: '保姆',
+            num: 12,
+            img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1608213417332&di=0ed827c48c56e436cefe21b278d9b3fb&imgtype=0&src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201603%2F10%2F20160310084144_BuaAi.thumb.400_0.jpeg'
+        },
+        {
+            key: 6,
+            name: '赵建国',
+            type: '美团外卖',
+            num: 232,
+            img: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2270457922,3670335519&fm=26&gp=0.jpg'
+        },
+        {
+            key: 7,
+            name: '李铁柱',
+            type: '保姆',
+            num: 12,
+            img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1608213417332&di=0ed827c48c56e436cefe21b278d9b3fb&imgtype=0&src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201603%2F10%2F20160310084144_BuaAi.thumb.400_0.jpeg'
+        },
+        {
+            key: 8,
+            name: '赵建国',
+            type: '美团外卖',
+            num: 232,
+            img: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2270457922,3670335519&fm=26&gp=0.jpg'
+        },
+    ],
+    //  访客夜间到访频繁排名
+    list2: [
+        {
+            key: 1,
+            name: '赵建国',
+            type: '美团外卖',
+            num: 232,
+            img: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2270457922,3670335519&fm=26&gp=0.jpg'
+        },
+        {
+            key: 2,
+            name: '李铁柱',
+            type: '保姆',
+            num: 12,
+            img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1608213417332&di=0ed827c48c56e436cefe21b278d9b3fb&imgtype=0&src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201603%2F10%2F20160310084144_BuaAi.thumb.400_0.jpeg'
+        },
+        {
+            key: 3,
+            name: '赵建国',
+            type: '美团外卖',
+            num: 232,
+            img: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2270457922,3670335519&fm=26&gp=0.jpg'
+        },
+        {
+            key: 4,
+            name: '李铁柱',
+            type: '保姆',
+            num: 12,
+            img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1608213417332&di=0ed827c48c56e436cefe21b278d9b3fb&imgtype=0&src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201603%2F10%2F20160310084144_BuaAi.thumb.400_0.jpeg'
+        },
+        {
+            key: 5,
+            name: '赵建国',
+            type: '美团外卖',
+            num: 232,
+            img: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2270457922,3670335519&fm=26&gp=0.jpg'
+        },
+        {
+            key: 6,
+            name: '李铁柱',
+            type: '保姆',
+            num: 12,
+            img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1608213417332&di=0ed827c48c56e436cefe21b278d9b3fb&imgtype=0&src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201603%2F10%2F20160310084144_BuaAi.thumb.400_0.jpeg'
+        },
+        {
+            key: 7,
+            name: '赵建国',
+            type: '美团外卖',
+            num: 232,
+            img: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2270457922,3670335519&fm=26&gp=0.jpg'
+        },
+        {
+            key: 8,
+            name: '李铁柱',
+            type: '保姆',
+            num: 12,
+            img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1608213417332&di=0ed827c48c56e436cefe21b278d9b3fb&imgtype=0&src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201603%2F10%2F20160310084144_BuaAi.thumb.400_0.jpeg'
+        },
+    ],
+};
+
