@@ -2,8 +2,7 @@
     <div class="visit-panel" data-msg="到访面板">
         <a-card class="visit-panel-card"
                 :bordered="false">
-            <div>{{nameTypeMap[type]}}</div>
-            <br>
+            <div class="visit-panel-name">{{nameTypeMap[type]}}</div>
             <a-row type="flex" justify="space-between" align="middle">
                 <a-col :span="13">
                     <img :src="list[0].img" class="visit-panel-img" alt="">
@@ -69,7 +68,10 @@
     .visit-panel {
         .visit-panel-card {
             background-color: var(--main-bg);
-            margin-top: -1em;
+            
+            .visit-panel-name {
+                margin-bottom: 2em;
+            }
             
             .visit-panel-img, .visit-panel-list-item {
                 width: 100%;

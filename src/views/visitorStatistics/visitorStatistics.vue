@@ -1,7 +1,7 @@
 <template>
     <div class="visitor-statistics" data-msg="访客统计">
         <CommonHeader title="访客统计"/>
-        <a-row type="flex" justify="space-between" align="middle" v-show="false">
+        <a-row type="flex" justify="space-between" align="middle">
             <a-col :span="8">
                 <PercentageOfVisitorsByType data-msg="访客种类占比"/>
             </a-col>
@@ -14,7 +14,7 @@
         </a-row>
         <br>
         <a-row type="flex" justify="space-between" align="middle">
-            <a-col :span="16" v-show="false">
+            <a-col :span="16">
                 <VehicleApproachTrend componentType="3" data-msg="当前社区访客量统计"/>
             </a-col>
             <a-col :span="8">
@@ -54,6 +54,6 @@
 </script>
 <style scoped lang="less">
     .visitor-statistics {
-    
+        overflow: hidden;
     }
 </style>
