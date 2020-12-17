@@ -2,7 +2,7 @@
     <div class="community-workers">
         <a-card style="width: 445px"
                 :bordered="false">
-            <p>社区人员</p>
+            <p class="card-component-title">社区人员</p>
             <a-divider/>
             <p>社区人口类型占比</p>
             <a-row type="flex" justify="space-between" align="middle">

@@ -2,7 +2,7 @@
     <div class="equipment-information">
         <a-card style="width: 445px"
                 :bordered="false">
-            <div>设备信息</div>
+            <div class="card-component-title">设备信息</div>
             <a-divider/>
             <a-list :data-source="equipmentInformationData">
                 <a-list-item slot="renderItem" slot-scope="item, index">

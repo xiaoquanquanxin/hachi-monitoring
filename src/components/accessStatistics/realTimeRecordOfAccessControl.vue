@@ -2,7 +2,7 @@
     <div class="real-time-record-of-access-control" data-msg="门禁实时记录">
         <a-card style="width: 600px"
                 :bordered="false">
-            <div>门禁实时记录</div>
+            <div class="card-component-title">门禁实时记录</div>
             <div class="list-wrap">
                 <ul class="list">
                     <li v-for="item in realTimeRecordOfAccessControlData"

@@ -3,7 +3,7 @@
         <a-card style="width: 445px"
                 :bordered="false">
             <a-row type="flex" justify="space-between" align="middle">
-                <div>报警事件</div>
+                <div class="card-component-title">报警事件</div>
                 <div>近7天报警总数<span>{{proportionOfAlarmTimeTodayData.lastWeek}}</span></div>
             </a-row>
             <a-divider/>

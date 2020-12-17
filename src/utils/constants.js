@@ -3,8 +3,8 @@ export const c03FFCC = '#03FFCC';
 export const c4e9a94 = '#4e9a94';
 export const c095B55 = '#095B55';
 export const cFFFFFF = '#FFFFFF';
-export const cBBBBBB = '#BBBBBB';
 export const cCCCCCC = '#cccccc';
+export const cBBBBBB = '#BBBBBB';
 export const c929292 = '#929292';
 export const c696969 = '#696969';
 export const c4D4D4D = '#4D4D4D';
@@ -12,6 +12,7 @@ export const cBBC0F7 = '#BBC0F7';
 export const c4565B0 = '#4565B0';
 
 export const c03FFCC01 = 'rgba(3,255,204,0.1)';
+export const cE56B6B = '#E56B6B';
 
 //  面板底色
 export const c25292E = '#25292E';

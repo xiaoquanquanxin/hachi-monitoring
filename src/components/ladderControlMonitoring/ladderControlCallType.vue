@@ -1,5 +1,5 @@
 <template>
-    <div class="percentage-of-visitors-by-type" data-msg="访客种类占比">
+    <div class="ladder-control-call-type" data-msg="梯控呼叫类型">
         <a-card style="width: 600px"
                 :bordered="false">
             <a-row type="flex" justify="space-between" align="middle">
@@ -18,28 +18,22 @@
                 </a-col>
             </a-row>
             <a-divider/>
-            <div id="percentageOfVisitorsByType"
-                 data-msg="访客种类占比饼图"
+            <div id="ladderControlCallType"
+                 data-msg="梯控呼叫类型占比饼图"
                  style="height: 320px;"
             ></div>
         </a-card>
     </div>
 </template>
 <script>
-    import { percentageOfVisitorsByTypeData } from '../../utils/staticData';
+    import { ladderControlCallTypeData } from '../../utils/staticData';
     import { init } from 'echarts';
     import {
-        c095B55,
-        c4e9a94,
         c03FFCC,
-        cC2FFFA,
         cFFFFFF,
-        cBBBBBB,
         c929292,
-        c696969,
-        c4D4D4D,
         c373A3E,
-        cCCCCCC,
+        cBBBBBB,
         c25292E,
     } from '@/utils/constants';
 
@@ -90,7 +84,7 @@
 
                     },
                     //  文字与 线 之间的距离。
-                    distanceToLabelLine: -32,
+                    distanceToLabelLine: -50,
                 },
                 labelLine: {
                     length: 16,
@@ -110,7 +104,7 @@
         name: 'percentageOfVisitorsByType',
         computed: {
             totalNumber(){
-                return this.percentageOfVisitorsByTypeData.reduce(((prev, item) => {
+                return this.ladderControlCallTypeData.reduce(((prev, item) => {
                     return prev + item.value;
                 }), 0);
             }
@@ -119,16 +113,16 @@
             return {
                 //  激活的面板
                 activeIndex: 0,
-                percentageOfVisitorsByTypeData: null,
+                ladderControlCallTypeData: null,
             };
         },
         created(){
-            this.percentageOfVisitorsByTypeData = percentageOfVisitorsByTypeData;
+            this.ladderControlCallTypeData = ladderControlCallTypeData;
         },
         mounted(){
-            const myEchart = init(document.getElementById('percentageOfVisitorsByType'));
-            option.series[0].data = this.percentageOfVisitorsByTypeData;
-            option.color = [c095B55, c4e9a94, c03FFCC, cC2FFFA, cFFFFFF, cBBBBBB, c929292, c696969, c4D4D4D,];
+            const myEchart = init(document.getElementById('ladderControlCallType'));
+            option.series[0].data = this.ladderControlCallTypeData;
+            option.color = [c03FFCC, cFFFFFF, c929292];
             option.title.text = this.totalNumber;
             myEchart.setOption(option);
         },
@@ -142,7 +136,7 @@
 <style scoped lang="less">
     @import '~@/css/custom-tab.less';
     
-    .percentage-of-visitors-by-type {
+    .ladder-control-call-type {
     
     }
 </style>

@@ -3,7 +3,7 @@
         <a-card style="width: 600px"
                 :bordered="false">
             <a-row type="flex" justify="space-between" align="middle">
-                <div>7日手动开闸统计</div>
+                <div class="card-component-title">7日手动开闸统计</div>
             </a-row>
             <a-divider/>
             <div id="manualSwitchingStatistics"

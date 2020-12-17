@@ -607,3 +607,31 @@ export const statisticsOnFrequentVisitsData = {
     ],
 };
 
+/**
+ * 梯控监测
+ * **/
+//  梯控呼叫类型
+export const ladderControlCallTypeData = [
+    { key: 1, name: '手动呼叫', value: 123, },
+    { key: 2, name: '室内机', value: 111, },
+    { key: 3, name: '手机APP预设', value: 140, }
+];
+//  当前梯控状态
+export const currentLadderControlStatusData = [
+    { key: 1, name: '空闲', value: 60, type: 'free' },
+    { key: 2, name: '忙碌', value: 30, type: 'busy' },
+    { key: 3, name: '故障', value: 10, type: 'fault' },
+];
+//  梯控运行工作排名
+export const ladderControlMonitoringData = [
+    { key: 1, value: 13, name: '一号楼一单元4号电梯' },
+    { key: 2, value: 12, name: '一号楼一单元5号电梯' },
+    { key: 3, value: 11, name: '一号楼一单元6号电梯' },
+    { key: 4, value: 10, name: '一号楼一单元7号电梯' },
+    { key: 5, value: 9, name: '一号楼一单元8号电梯' },
+    { key: 6, value: 8, name: '一号楼一单元9号电梯' },
+    { key: 7, value: 7, name: '一号楼一单元10号电梯' },
+    { key: 8, value: 9, name: '一号楼一单元11号电梯' },
+    { key: 9, value: 8, name: '一号楼一单元12号电梯' },
+    { key: 10, value: 4, name: '一号楼一单元13号电梯' },
+];

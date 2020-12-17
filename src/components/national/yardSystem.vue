@@ -2,7 +2,7 @@
     <div class="yards-ystem">
         <a-card style="width: 445px"
                 :bordered="false">
-            <p>车场系统</p>
+            <p class="card-component-title">车场系统</p>
             <a-divider/>
             <p>车位情况占比</p>
             <a-row type="flex" justify="space-between" align="middle">

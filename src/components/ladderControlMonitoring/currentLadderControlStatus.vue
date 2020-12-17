@@ -1,27 +1,19 @@
 <template>
-    <div data-msg="人员类型占比" class="proportion-of-personnel-types">
+    <div data-msg="当前梯控状态" class="current-ladder-control-status">
         <a-card style="width: 600px"
                 :bordered="false">
-            <a-row type="flex" justify="space-between" align="middle">
-                <div class="card-component-title">人员类型占比</div>
-                <a-select default-value="1" :bordered="false" @change="handleChangeFn">
-                    <a-icon class="suffix-icon" type="caret-down" slot="suffixIcon"/>
-                    <a-select-option value="1">今日</a-select-option>
-                    <a-select-option value="2">昨日</a-select-option>
-                    <a-select-option value="3">本周</a-select-option>
-                </a-select>
-            </a-row>
+            <div class="card-component-title">当前梯控状态</div>
             <a-divider/>
             <a-row type="flex" justify="space-between" align="middle">
                 <a-col :span="10">
-                    <div id="proportionOfPersonnelTypes"
-                         data-msg="人员类型占比"
-                         style="height: 280px;"
+                    <div id="currentLadderControlStatus"
+                         data-msg="当前梯控状态"
+                         style="height: 320px;"
                     ></div>
                 </a-col>
                 <a-col :span="14">
                     <ul class="personnel-type-list">
-                        <li v-for="item in proportionOfPersonnelTypesData"
+                        <li v-for="item in currentLadderControlStatusData"
                             :key="item.key"
                             class="list-item"
                         >
@@ -46,8 +38,9 @@
 </template>
 <script>
     import { init } from 'echarts';
-    import { c03FFCC, cFFFFFF, c4D4D4D, c929292, cBBC0F7 } from '@/utils/constants';
+    import { c03FFCC, cFFFFFF, c4D4D4D, c929292, cBBC0F7, cE56B6B } from '@/utils/constants';
     import { showFalse } from '../../utils/constants';
+    import { currentLadderControlStatusData } from '../../utils/staticData';
 
     const option = {
         tooltip: false,
@@ -67,78 +60,86 @@
         series: [
             {
                 type: 'pie',
-                radius: ['97%', '100%'],
+                radius: ['96%', '100%'],
                 avoidLabelOverlap: false,
                 label: showFalse,
             },
             {
                 type: 'pie',
-                radius: ['77%', '80%'],
+                radius: ['76%', '80%'],
+                avoidLabelOverlap: false,
+                label: showFalse,
+            },
+            {
+                type: 'pie',
+                radius: ['56%', '60%'],
                 avoidLabelOverlap: false,
                 label: showFalse,
             }
         ]
     };
     export default {
-        name: 'proportionOfPersonnelTypes',
-        props: ['proportionOfPersonnelTypesData'],
+        name: 'currentLadderControlStatus',
         computed: {
             total(){
-                return this.proportionOfPersonnelTypesData.reduce((prev, current) => {
+                return this.currentLadderControlStatusData.reduce((prev, current) => {
                     return prev + current.value;
                 }, 0);
             }
         },
         data(){
             return {
+                currentLadderControlStatusData: null,
                 //  设置颜色
                 colorMap: {
-                    //  访客
-                    visitors: c03FFCC,
-                    //  常驻
-                    resident: cBBC0F7,
+                    //  空闲
+                    free: c03FFCC,
+                    //  忙碌
+                    busy: cBBC0F7,
+                    //  故障
+                    fault: cE56B6B,
                     //  其他
                     other: c4D4D4D,
                 },
                 //  设置icon
                 iconMap: {
-                    //  访客
-                    visitors: 'user',
-                    //  常驻
-                    resident: 'user-delete',
+                    //  空闲
+                    free: 'control',
+                    //  忙碌
+                    busy: 'control',
+                    //  故障
+                    fault: 'control',
                 }
             };
         },
         created(){
-            this.proportionOfPersonnelTypesData.forEach((item, index) => {
+            this.currentLadderControlStatusData = currentLadderControlStatusData;
+            this.currentLadderControlStatusData.forEach((item, index) => {
                 item.color = this.colorMap[item.type] || this.colorMap.other;
                 item.percent = `${(item.value / this.total * 100).toFixed(0)}%`;
             });
         },
         mounted(){
-            const myEchart = init(document.getElementById('proportionOfPersonnelTypes'));
-            option.color = this.proportionOfPersonnelTypesData.map(item => item.color);
+            const myEchart = init(document.getElementById('currentLadderControlStatus'));
+            option.color = this.currentLadderControlStatusData.map(item => item.color);
             option.title.text = this.total;
             option.title.subtext = '总计';
-            //  访客
-            const visitor = this.proportionOfPersonnelTypesData[0];
-            //  常驻
-            const resident = this.proportionOfPersonnelTypesData[1];
-            option.series[0].data = [visitor, Object.assign({}, resident, { itemStyle: { color: c4D4D4D } })];
-            option.series[1].data = [resident, Object.assign({}, visitor, { itemStyle: { color: c4D4D4D } })];
-            //  console.log(option.series[0].data);
-            //  console.log(option.series[1].data);
+            //  其他灰色的
+            const other = { itemStyle: { color: c4D4D4D } };
+            //  数据
+            const free = this.currentLadderControlStatusData[0];
+            const busy = this.currentLadderControlStatusData[1];
+            const fault = this.currentLadderControlStatusData[2];
+            const total = this.total;
+            option.series[0].data = [free, Object.assign({ value: total - free.value }, other)];
+            option.series[1].data = [busy, Object.assign({ value: total - busy.value }, other)];
+            option.series[2].data = [fault, Object.assign({ value: total - fault.value }, other)];
             myEchart.setOption(option);
         },
-        methods: {
-            handleChangeFn(val){
-
-            }
-        }
     };
 </script>
 <style scoped lang="less">
-    .proportion-of-personnel-types {
+    .current-ladder-control-status {
         
         //  列表
         .personnel-type-list {
@@ -166,7 +167,7 @@
                 }
                 
                 .item-percent {
-                    font-size: 1.7em;
+                    font-size: 2.4em;
                 }
             }
         }

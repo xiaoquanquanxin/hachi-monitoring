@@ -3,7 +3,7 @@
         <a-card style="width: 600px"
                 :bordered="false">
             <a-row type="flex" justify="space-between" align="middle">
-                <div>开门方式占比</div>
+                <div class="card-component-title">开门方式占比</div>
                 <a-select default-value="1" :bordered="false" @change="handleChangeFn">
                     <a-icon class="suffix-icon" type="caret-down" slot="suffixIcon"/>
                     <a-select-option value="1">今日</a-select-option>
