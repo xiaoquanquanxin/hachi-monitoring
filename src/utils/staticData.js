@@ -967,3 +967,79 @@ export const operationConditionOfLadderControlData = [
     ],
 ];
 
+/**
+ * 物业缴费
+ * */
+//  数据列表
+export const dataListData = [
+    { key: 1, name: '今日收入/万', value: 4677 },
+    { key: 2, name: '本月收入/万', value: 14546 },
+    { key: 3, name: '本月应收/万', value: 6434846 },
+    { key: 4, name: '已出账单/万', value: 2645 },
+    { key: 5, name: '已出账单未缴费/万', value: 67674 },
+    { key: 6, name: '过期欠费金额/万', value: 54645 },
+];
+//  营业收入占比
+export const proportionOfOperatingIncomeData = [
+    { key: 1, name: '服务费', value: 46646, },
+    { key: 2, name: '车位费', value: 19440, },
+    { key: 3, name: '租金', value: 7666, },
+    { key: 4, name: '水电费', value: 3888, },
+];
+//  应收实收占比
+export const percentageOfReceivablesData = [
+    {
+        name: '服务费',
+        paidIn: 55,
+        accountsReceivable: 332,
+    },
+    {
+        name: '停车费',
+        paidIn: 44,
+        accountsReceivable: 332,
+    },
+    {
+        name: '租金',
+        paidIn: 124,
+        accountsReceivable: 232,
+    },
+    {
+        name: '公摊费',
+        paidIn: 12,
+        accountsReceivable: 326,
+    },
+    {
+        name: '空置费',
+        paidIn: 132,
+        accountsReceivable: 382,
+    },
+    {
+        name: '水电费',
+        paidIn: 162,
+        accountsReceivable: 342,
+    },
+    {
+        name: '收费类型1',
+        paidIn: 142,
+        accountsReceivable: 325,
+    },
+    {
+        name: '收费类型2',
+        paidIn: 44,
+        accountsReceivable: 332,
+    },
+    {
+        name: '收费类型3',
+        paidIn: 124,
+        accountsReceivable: 232,
+    },
+    {
+        name: '收费类型4',
+        paidIn: 12,
+        accountsReceivable: 326,
+    },
+];
+
+
+
+
