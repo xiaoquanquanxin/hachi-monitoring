@@ -108,7 +108,7 @@
     import { propertyPayCostData } from '../../utils/staticData';
 
     export default {
-        name: 'propertyPayCost',
+        name: 'propertyPayCostCompnent',
         data(){
             return {
                 propertyPayCostData: null,
