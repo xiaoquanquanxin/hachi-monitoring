@@ -34,9 +34,7 @@
                           :communityWorkersData="communityWorkersData"
         />
         <ReportAboutRepairComponent data-msg="报事报修"/>
-        <PropertyPayCost data-msg="物业缴费"
-                         :propertyPayCostData="propertyPayCostData"
-        />
+        <PropertyPayCostComponent data-msg="物业缴费"/>
         <AlarmEvents data-msg="报警事件"
                      :proportionOfAlarmTimeTodayData="proportionOfAlarmTimeTodayData"
         />
@@ -56,7 +54,7 @@
     import BasicInfoStatistical from '@/components/national/basicInfoStatistical.vue';
     import CommunityWorkers from '@/components/national/communityWorkers.vue';
     import ReportAboutRepairComponent from '@/components/national/reportAboutRepairComponent.vue';
-    import PropertyPayCost from '@/components/national/propertyPayCost.vue';
+    import PropertyPayCostComponent from '@/components/national/propertyPayCostComponent.vue';
     import AlarmEvents from '@/components/national/alarmEvents.vue';
     import EntranceGuardSystem from '@/components/national/entranceGuardSystem.vue';
     import YardSystem from '@/components/national/yardSystem.vue';
@@ -67,7 +65,6 @@
         homePanelData,
         basicInfoStatisticalData,
         communityWorkersData,
-        propertyPayCostData,
         proportionOfAlarmTimeTodayData,
         swipeModeData,
         proportionOfParkingSpacesData,
@@ -84,7 +81,7 @@
             //  报事报修
             ReportAboutRepairComponent,
             //  物业缴费
-            PropertyPayCost,
+            PropertyPayCostComponent,
             //  报警事件
             AlarmEvents,
             //  门禁系统,
@@ -105,8 +102,6 @@
                 basicInfoStatisticalData,
                 //  社区人员
                 communityWorkersData,
-                //  物业缴费
-                propertyPayCostData,
                 //  报警事件
                 proportionOfAlarmTimeTodayData,
                 //  门禁系统

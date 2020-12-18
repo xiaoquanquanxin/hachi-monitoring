@@ -1,5 +1,5 @@
 <template>
-    <div class="property-pay-cost">
+    <div class="property-pay-cost-compennt">
         <a-card style="width: 445px"
                 :bordered="false"
         >
@@ -105,12 +105,17 @@
             },
         ]
     };
+    import { propertyPayCostData } from '../../utils/staticData';
 
     export default {
         name: 'propertyPayCost',
-        props: ['propertyPayCostData'],
         data(){
-            return {};
+            return {
+                propertyPayCostData: null,
+            };
+        },
+        created(){
+            this.propertyPayCostData = propertyPayCostData;
         },
         mounted(){
             const myEchart = init(document.getElementById('propertyPaymentStatistics'));
