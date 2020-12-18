@@ -1039,7 +1039,15 @@ export const percentageOfReceivablesData = [
         accountsReceivable: 326,
     },
 ];
-
+//  楼栋缴费占比
+export const proportionOfBuildingPaymentData = {
+    //  x轴
+    buildingList: ['1号楼', '2号楼', '3号楼', '4号楼', '5号楼', '6号楼', '7号楼', '8号楼', '9号楼', '10号楼', '11号楼', '12号楼', '13号楼', '14号楼', '15号楼', '16号楼', '17号楼', '18号楼', '19号楼', '20号楼'],
+    //  应缴费
+    shouldPayCostList: [39, 34, 25, 41, 25, 27, 22, 19, 26, 21, 23, 12, 24, 16, 16, 16, 14, 10, 11, 11],
+    //  已缴费
+    alreadyPayCostList: [30, 30, 30, 30, 33, 32, 31, 31, 34, 35, 33, 38, 40, 39, 36, 37, 41, 41, 39, 38],
+};
 
 
 

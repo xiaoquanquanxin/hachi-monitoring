@@ -1,7 +1,7 @@
 <template>
     <div class="access-statistics" data-msg="物业缴费">
         <CommonHeader title="物业缴费"/>
-        <a-row type="flex" justify="space-between" align="middle">
+        <a-row type="flex" justify="space-between" align="middle" v-show="false">
             <a-col :span="16">
                 <DataList data-msg="数据列表"/>
                 <br>
@@ -19,6 +19,14 @@
             </a-col>
         </a-row>
         <br>
+        <a-row type="flex" justify="space-between" align="middle">
+            <a-col :span="16">
+                <ProportionOfBuildingPayment data-msg="楼栋缴费占比"/>
+            </a-col>
+            <a-col :span="8">
+                楼栋缴费占比
+            </a-col>
+        </a-row>
     </div>
 </template>
 <script>
@@ -26,6 +34,7 @@
     import DataList from '@/components/propertyPayCost/dataList.vue';
     import ProportionOfOperatingIncome from '@/components/propertyPayCost/proportionOfOperatingIncome.vue';
     import PercentageOfReceivables from '@/components/propertyPayCost/percentageOfReceivables.vue';
+    import ProportionOfBuildingPayment from '@/components/propertyPayCost/proportionOfBuildingPayment.vue';
 
     export default {
         name: 'propertyPayCost',
@@ -37,6 +46,8 @@
             ProportionOfOperatingIncome,
             //  应收实收占比
             PercentageOfReceivables,
+            //  楼栋缴费占比
+            ProportionOfBuildingPayment,
         }
     };
 </script>
