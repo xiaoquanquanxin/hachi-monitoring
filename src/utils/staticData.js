@@ -1064,5 +1064,14 @@ export const revenueComparisonData = [
     { key: 12, name: '服务费', current: 1233, ratio: 432, rose: '4%', yearContrast: 43, growth: 32 },
 ];
 
+/**
+ * 社区人口
+ * **/
+export const typesOfIdentityData = [
+    { key: 1, name: '业主', value: 3888, },
+    { key: 2, name: '租客', value: 2666, },
+    { key: 3, name: '其他', value: 999, },
+];
+
 
 
