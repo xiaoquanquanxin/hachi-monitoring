@@ -635,3 +635,335 @@ export const ladderControlMonitoringData = [
     { key: 9, value: 8, name: '一号楼一单元12号电梯' },
     { key: 10, value: 4, name: '一号楼一单元13号电梯' },
 ];
+//  梯控运行情况
+export const operationConditionOfLadderControlData = [
+    [
+        {
+            building: '一号楼',
+            key: 1,
+            list: [
+                {
+                    key: 1,
+                    unit: '一单元',
+                    elevator: '1号电梯',
+                    count: 78,
+                    type: 3,
+                },
+                {
+                    key: 2,
+                    unit: '一单元',
+                    elevator: '2号电梯',
+                    count: 81,
+                    type: 1,
+                }
+            ]
+        },
+        {
+            building: '一号楼',
+            key: 2,
+            list: [
+                {
+                    key: 1,
+                    unit: '一单元',
+                    elevator: '1号电梯',
+                    count: 78,
+                    type: 1,
+                },
+                {
+                    key: 2,
+                    unit: '一单元',
+                    elevator: '2号电梯',
+                    count: 81,
+                    type: 1,
+                }
+            ]
+        },
+        {
+            building: '二号楼',
+            key: 3,
+            list: [
+                {
+                    key: 1,
+                    unit: '一单元',
+                    elevator: '1号电梯',
+                    count: 78,
+                    type: 2,
+                },
+                {
+                    key: 2,
+                    unit: '一单元',
+                    elevator: '2号电梯',
+                    count: 81,
+                    type: 2,
+                }
+            ]
+        },
+        {
+            building: '三号楼',
+            key: 4,
+            list: [
+                {
+                    key: 1,
+                    unit: '一单元',
+                    elevator: '1号电梯',
+                    count: 78,
+                    type: 2,
+                },
+                {
+                    key: 2,
+                    unit: '一单元',
+                    elevator: '2号电梯',
+                    count: 81,
+                    type: 3,
+                }
+            ]
+        }
+    ],
+    [
+        {
+            building: '一号楼',
+            key: 1,
+            list: [
+                {
+                    key: 1,
+                    unit: '一单元',
+                    elevator: '1号电梯',
+                    count: 78,
+                    type: 3,
+                },
+                {
+                    key: 2,
+                    unit: '一单元',
+                    elevator: '2号电梯',
+                    count: 81,
+                    type: 1,
+                }
+            ]
+        },
+        {
+            building: '一号楼',
+            key: 2,
+            list: [
+                {
+                    key: 1,
+                    unit: '一单元',
+                    elevator: '1号电梯',
+                    count: 78,
+                    type: 1,
+                },
+                {
+                    key: 2,
+                    unit: '一单元',
+                    elevator: '2号电梯',
+                    count: 81,
+                    type: 1,
+                }
+            ]
+        },
+        {
+            building: '二号楼',
+            key: 3,
+            list: [
+                {
+                    key: 1,
+                    unit: '一单元',
+                    elevator: '1号电梯',
+                    count: 78,
+                    type: 2,
+                },
+                {
+                    key: 2,
+                    unit: '一单元',
+                    elevator: '2号电梯',
+                    count: 81,
+                    type: 2,
+                }
+            ]
+        },
+        {
+            building: '三号楼',
+            key: 4,
+            list: [
+                {
+                    key: 1,
+                    unit: '一单元',
+                    elevator: '1号电梯',
+                    count: 78,
+                    type: 2,
+                },
+                {
+                    key: 2,
+                    unit: '一单元',
+                    elevator: '2号电梯',
+                    count: 81,
+                    type: 3,
+                }
+            ]
+        }
+    ],
+    [
+        {
+            building: '一号楼',
+            key: 1,
+            list: [
+                {
+                    key: 1,
+                    unit: '一单元',
+                    elevator: '1号电梯',
+                    count: 78,
+                    type: 3,
+                },
+                {
+                    key: 2,
+                    unit: '一单元',
+                    elevator: '2号电梯',
+                    count: 81,
+                    type: 1,
+                }
+            ]
+        },
+        {
+            building: '一号楼',
+            key: 2,
+            list: [
+                {
+                    key: 1,
+                    unit: '一单元',
+                    elevator: '1号电梯',
+                    count: 78,
+                    type: 1,
+                },
+                {
+                    key: 2,
+                    unit: '一单元',
+                    elevator: '2号电梯',
+                    count: 81,
+                    type: 1,
+                }
+            ]
+        },
+        {
+            building: '二号楼',
+            key: 3,
+            list: [
+                {
+                    key: 1,
+                    unit: '一单元',
+                    elevator: '1号电梯',
+                    count: 78,
+                    type: 2,
+                },
+                {
+                    key: 2,
+                    unit: '一单元',
+                    elevator: '2号电梯',
+                    count: 81,
+                    type: 2,
+                }
+            ]
+        },
+        {
+            building: '三号楼',
+            key: 4,
+            list: [
+                {
+                    key: 1,
+                    unit: '一单元',
+                    elevator: '1号电梯',
+                    count: 78,
+                    type: 2,
+                },
+                {
+                    key: 2,
+                    unit: '一单元',
+                    elevator: '2号电梯',
+                    count: 81,
+                    type: 3,
+                }
+            ]
+        }
+    ],
+    [
+        {
+            building: '一号楼',
+            key: 1,
+            list: [
+                {
+                    key: 1,
+                    unit: '一单元',
+                    elevator: '1号电梯',
+                    count: 78,
+                    type: 3,
+                },
+                {
+                    key: 2,
+                    unit: '一单元',
+                    elevator: '2号电梯',
+                    count: 81,
+                    type: 1,
+                }
+            ]
+        },
+        {
+            building: '一号楼',
+            key: 2,
+            list: [
+                {
+                    key: 1,
+                    unit: '一单元',
+                    elevator: '1号电梯',
+                    count: 78,
+                    type: 1,
+                },
+                {
+                    key: 2,
+                    unit: '一单元',
+                    elevator: '2号电梯',
+                    count: 81,
+                    type: 1,
+                }
+            ]
+        },
+        {
+            building: '二号楼',
+            key: 3,
+            list: [
+                {
+                    key: 1,
+                    unit: '一单元',
+                    elevator: '1号电梯',
+                    count: 78,
+                    type: 2,
+                },
+                {
+                    key: 2,
+                    unit: '一单元',
+                    elevator: '2号电梯',
+                    count: 81,
+                    type: 2,
+                }
+            ]
+        },
+        {
+            building: '三号楼',
+            key: 4,
+            list: [
+                {
+                    key: 1,
+                    unit: '一单元',
+                    elevator: '1号电梯',
+                    count: 78,
+                    type: 2,
+                },
+                {
+                    key: 2,
+                    unit: '一单元',
+                    elevator: '2号电梯',
+                    count: 81,
+                    type: 3,
+                }
+            ]
+        }
+    ],
+];
+

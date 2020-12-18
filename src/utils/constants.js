@@ -12,7 +12,8 @@ export const cBBC0F7 = '#BBC0F7';
 export const c4565B0 = '#4565B0';
 
 export const c03FFCC01 = 'rgba(3,255,204,0.1)';
-export const cE56B6B = '#E56B6B';
+export const cE56B6B = '' +
+    '';
 
 //  面板底色
 export const c25292E = '#25292E';

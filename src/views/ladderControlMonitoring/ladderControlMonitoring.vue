@@ -1,7 +1,7 @@
 <template>
     <div class="ladder-control-monitoring" data-msg="梯控监测">
         <CommonHeader title="梯控监测"/>
-        <a-row type="flex" justify="space-between" align="middle" v-show="false">
+        <a-row type="flex" justify="space-between" align="middle">
             <a-col :span="8">
                 <LadderControlCallType data-msg="梯控呼叫类型"/>
             </a-col>
@@ -14,7 +14,7 @@
         </a-row>
         <br>
         <a-row type="flex" justify="space-between" align="middle">
-            <a-col :span="16" v-show="false">
+            <a-col :span="16">
                 <VehicleApproachTrend componentType="4" data-msg="梯控运行工作量情况"/>
             </a-col>
             <a-col :span="8">

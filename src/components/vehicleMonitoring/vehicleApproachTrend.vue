@@ -70,7 +70,7 @@
             JSON.parse(JSON.stringify(lineSeriesConfig)),
         ]
     };
-
+    
     export default {
         name: 'vehicleApproachTrend',
         props: ['componentType'],
@@ -81,6 +81,7 @@
                     1: { name: '车辆进场趋势', width: 1220 },
                     2: { name: '报事报修数目统计', width: 1360 },
                     3: { name: '当前社区访客量统计', width: 1220 },
+                    4: { name: '梯控运行工作量情况', width: 1220 },
                 },
                 //  激活的面板
                 activeIndex: 0,
