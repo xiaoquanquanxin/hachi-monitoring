@@ -1,7 +1,7 @@
 <template>
     <div class="access-statistics" data-msg="物业缴费">
         <CommonHeader title="物业缴费"/>
-        <a-row type="flex" justify="space-between" align="middle" v-show="false">
+        <a-row type="flex" justify="space-between" align="middle">
             <a-col :span="16">
                 <DataList data-msg="数据列表"/>
                 <br>
@@ -21,10 +21,10 @@
         <br>
         <a-row type="flex" justify="space-between" align="middle">
             <a-col :span="16">
-                <ProportionOfBuildingPayment data-msg="楼栋缴费占比"/>
+                <RevenueComparison data-msg="营业收入对比"/>
             </a-col>
             <a-col :span="8">
-                楼栋缴费占比
+                <ProportionOfBuildingPayment data-msg="楼栋缴费占比"/>
             </a-col>
         </a-row>
     </div>
@@ -35,6 +35,7 @@
     import ProportionOfOperatingIncome from '@/components/propertyPayCost/proportionOfOperatingIncome.vue';
     import PercentageOfReceivables from '@/components/propertyPayCost/percentageOfReceivables.vue';
     import ProportionOfBuildingPayment from '@/components/propertyPayCost/proportionOfBuildingPayment.vue';
+    import RevenueComparison from '@/components/propertyPayCost/revenueComparison.vue';
 
     export default {
         name: 'propertyPayCost',
@@ -48,6 +49,8 @@
             PercentageOfReceivables,
             //  楼栋缴费占比
             ProportionOfBuildingPayment,
+            //  营业收入对比
+            RevenueComparison
         }
     };
 </script>

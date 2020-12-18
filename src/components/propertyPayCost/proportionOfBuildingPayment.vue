@@ -18,7 +18,7 @@
             <a-divider/>
             <div id="proportionOfBuildingPayment"
                  data-msg="楼栋缴费占比条形图"
-                 style="height: 340px;"
+                 style="height: 300px;"
             ></div>
         </a-card>
     </div>

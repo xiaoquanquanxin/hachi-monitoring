@@ -1048,6 +1048,21 @@ export const proportionOfBuildingPaymentData = {
     //  已缴费
     alreadyPayCostList: [30, 30, 30, 30, 33, 32, 31, 31, 34, 35, 33, 38, 40, 39, 36, 37, 41, 41, 39, 38],
 };
+//  营业收入对比
+export const revenueComparisonData = [
+    { key: 1, name: '服务费', current: 1233, ratio: 432, rose: '4%', yearContrast: 43, growth: 32 },
+    { key: 2, name: '停车费', current: 1233, ratio: 432, rose: '4%', yearContrast: 43, growth: 32 },
+    { key: 3, name: '租金', current: 1233, ratio: 432, rose: '4%', yearContrast: 43, growth: 32 },
+    { key: 4, name: '公摊费', current: 1233, ratio: 432, rose: '4%', yearContrast: 43, growth: 32 },
+    { key: 5, name: '空置费', current: 1233, ratio: 432, rose: '4%', yearContrast: 43, growth: 32 },
+    { key: 6, name: '暂存款', current: 1233, ratio: 432, rose: '4%', yearContrast: 43, growth: 32 },
+    { key: 7, name: '水电费', current: 1233, ratio: 432, rose: '4%', yearContrast: 43, growth: 32 },
+    { key: 8, name: '押金', current: 1233, ratio: 432, rose: '4%', yearContrast: 43, growth: 32 },
+    { key: 9, name: '服务费', current: 1233, ratio: 432, rose: '4%', yearContrast: 43, growth: 32 },
+    { key: 10, name: '服务费', current: 1233, ratio: 432, rose: '4%', yearContrast: 43, growth: 32 },
+    { key: 11, name: '服务费', current: 1233, ratio: 432, rose: '4%', yearContrast: 43, growth: 32 },
+    { key: 12, name: '服务费', current: 1233, ratio: 432, rose: '4%', yearContrast: 43, growth: 32 },
+];
 
 
 
