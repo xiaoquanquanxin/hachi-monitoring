@@ -79,7 +79,7 @@
         series: [{
             type: 'bar',
             barWidth: 6,
-            data: [1, 2, 3, 34, 5, 66,],
+            //  data: [1, 2, 3, 34, 5, 66,],
             label: {
                 fontSize: 12,
                 show: true,
