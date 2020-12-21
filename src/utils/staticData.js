@@ -1081,5 +1081,36 @@ export const ageDistributionBySexData = [
     { key: 5, male: 3380, famale: 3090, name: '10-18岁' },
     { key: 6, male: 1539, famale: 1329, name: '10岁及以下' },
 ];
-
+//  主要区域占比
+export const proportionOMajorRegionsData = [
+    { key: 1, name: '东瀛1', value: 120, },
+    { key: 2, name: '东瀛2', value: 100, },
+    { key: 3, name: '东瀛3', value: 90, },
+    { key: 4, name: '东瀛4', value: 80, },
+    { key: 5, name: '东瀛5', value: 35, },
+];
+//  其他地区占比
+export const otherRegionsData = [
+    { key: 1, name: '山东', value: 120, },
+    { key: 2, name: '山西', value: 100, },
+    { key: 3, name: '河南', value: 90, },
+    { key: 4, name: '河北', value: 80, },
+    { key: 5, name: '广东', value: 35, },
+    { key: 6, name: '广西', value: 32, },
+    { key: 7, name: '江西', value: 43, },
+    { key: 8, name: '陕西', value: 65, },
+    { key: 9, name: '北京', value: 87, },
+    { key: 10, name: '上海', value: 87, },
+    { key: 11, name: '广州', value: 87, },
+    { key: 12, name: '深圳', value: 87, },
+    { key: 13, name: '重庆', value: 87, },
+    { key: 14, name: '天津', value: 87, },
+];
+//  名族结构
+export const ethnicStructureData = [
+    { key: 1, name: '汉族', value: 3888, },
+    { key: 2, name: '苗族', value: 1288, },
+    { key: 3, name: '回族', value: 288, },
+    { key: 4, name: '其他', value: 99, },
+];
 

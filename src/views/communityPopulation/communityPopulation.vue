@@ -17,7 +17,7 @@
                 <VehicleApproachTrend componentType="5" data-msg="近12月登记住户数量变化"/>
             </a-col>
             <a-col :span="8">
-                区域占比
+                <AreaOf data-msg="区域占比"/>
             </a-col>
         </a-row>
     </div>
@@ -28,6 +28,7 @@
     import TypesOfIdentity from '@/components/communityPopulation/typesOfIdentity.vue';
     import AgeDistributionBySex from '@/components/communityPopulation/ageDistributionBySex.vue';
     import VehicleApproachTrend from '@/components/vehicleMonitoring/vehicleApproachTrend.vue';
+    import AreaOf from '@/components/communityPopulation/areaOf.vue';
 
     export default {
         name: 'communityPopulation',
@@ -41,6 +42,8 @@
             AgeDistributionBySex,
             //  近12月登记住户数量变化
             VehicleApproachTrend,
+            //  区域占比
+            AreaOf,
         }
     };
 </script>
