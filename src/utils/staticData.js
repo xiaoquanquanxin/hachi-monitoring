@@ -1074,12 +1074,12 @@ export const typesOfIdentityData = [
 ];
 //  年龄段性别分布
 export const ageDistributionBySexData = [
-    { key: 1, male: 9, famale: 19, name: '70岁以上' },
-    { key: 2, male: 30, famale: 40, name: '50-70岁' },
-    { key: 3, male: 90, famale: 80, name: '30-50岁' },
-    { key: 4, male: 100, famale: 120, name: '18-30岁' },
-    { key: 5, male: 80, famale: 90, name: '10-18岁' },
-    { key: 6, male: 39, famale: 29, name: '10岁及以下' },
+    { key: 1, male: 1129, famale: 819, name: '70岁以上' },
+    { key: 2, male: 2330, famale: 3240, name: '50-70岁' },
+    { key: 3, male: 5890, famale: 5580, name: '30-50岁' },
+    { key: 4, male: 4100, famale: 4120, name: '18-30岁' },
+    { key: 5, male: 3380, famale: 3090, name: '10-18岁' },
+    { key: 6, male: 1539, famale: 1329, name: '10岁及以下' },
 ];
 
 

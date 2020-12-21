@@ -4,15 +4,17 @@
         <a-row type="flex" justify="space-between" align="middle">
             <a-col :span="16">
                 <a-row type="flex" justify="space-between" align="middle">
-                    <a-col :span="12" v-show="false">
+                    <a-col :span="12">
                         <CommunityDemographics data-ms="社区人口统计"/>
                         <br>
                         <TypesOfIdentity data-msg="身份类型"/>
                     </a-col>
-                    <a-col :span="6">
+                    <a-col :span="12">
                         <AgeDistributionBySex data-msg="年龄段性别分布"/>
                     </a-col>
                 </a-row>
+                <br>
+                <VehicleApproachTrend componentType="5" data-msg="近12月登记住户数量变化"/>
             </a-col>
             <a-col :span="8">
                 区域占比
@@ -25,6 +27,7 @@
     import CommunityDemographics from '@/components/communityPopulation/communityDemographics.vue';
     import TypesOfIdentity from '@/components/communityPopulation/typesOfIdentity.vue';
     import AgeDistributionBySex from '@/components/communityPopulation/ageDistributionBySex.vue';
+    import VehicleApproachTrend from '@/components/vehicleMonitoring/vehicleApproachTrend.vue';
 
     export default {
         name: 'communityPopulation',
@@ -36,6 +39,8 @@
             TypesOfIdentity,
             //  年龄段性别分布
             AgeDistributionBySex,
+            //  近12月登记住户数量变化
+            VehicleApproachTrend,
         }
     };
 </script>

@@ -1,18 +1,28 @@
 <template>
     <div class="age-distribution-by-sex" data-msg="年龄段性别分布">
-        <a-card style="width: 600px; padding: 1em 0"
+        <a-card style="width: 600px;"
                 :bordered="false"
         >
             <h2 class="card-component-title">年龄段性别分布</h2>
             <a-divider/>
             <a-row type="flex" justify="space-between" align="middle">
-                <a-col :span="11">
+                <div>
+                    <div class="label-name">女性</div>
+                    <div class="label-value">6000</div>
+                </div>
+                <div>
+                    <div class="label-name">男性</div>
+                    <div class="label-value">6000</div>
+                </div>
+            </a-row>
+            <a-row type="flex" justify="space-between" align="middle">
+                <a-col>
                     <div id="famaleList"
                          data-msg="女性列表"
-                         style="height: 320px;"
+                         style="width:245px;height:300px;"
                     ></div>
                 </a-col>
-                <a-col :span="3">
+                <a-col>
                     <ul class="list">
                         <li>70岁以上</li>
                         <li>50-70岁</li>
@@ -22,10 +32,10 @@
                         <li>10岁及以下</li>
                     </ul>
                 </a-col>
-                <a-col :span="10">
+                <a-col>
                     <div id="maleList"
                          data-msg="男性列表"
-                         style="height: 320px;"
+                         style="width:245px;height:300px;"
                     ></div>
                 </a-col>
             </a-row>
@@ -38,7 +48,7 @@
     import { ageDistributionBySexData } from '../../utils/staticData';
 
     const option = {
-        grid: Object.assign({}, grid, { top: '6%', left: '5%', right: '5%' }),
+        grid: Object.assign({}, grid, { top: '6%', left: '8%', right: '8%' }),
         xAxis: {
             inverse: true,
             type: 'value',
@@ -107,10 +117,20 @@
 </script>
 <style scoped lang="less">
     .age-distribution-by-sex {
+        .label-name {
+            font-size: 12px;
+        }
+        
+        .label-value {
+            color: var(--cB3B5B5);
+        }
+        
         .list {
+            white-space: nowrap;
+            width: 60px;
             padding-top: .6em;
             font-size: 12px;
-            line-height: 3.94em;
+            line-height: 3.66em;
             text-align: center;
         }
     }

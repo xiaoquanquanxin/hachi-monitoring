@@ -86,7 +86,7 @@ export const syncRouteList = [
             },
             {
                 meta: {
-                    chName: '报警事件'
+                    chName: '社区人口'
                 },
                 path: '/community/communityPopulation',
                 name: 'CommunityPopulation',
