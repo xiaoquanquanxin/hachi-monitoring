@@ -1,6 +1,6 @@
 <template>
-    <div class="community-population" data-msg="门禁统计">
-        <CommonHeader title="报警事件"/>
+    <div class="community-population" data-msg="社区人口">
+        <CommonHeader title="社区人口"/>
         <a-row type="flex" justify="space-between" align="middle">
             <a-col :span="16">
                 <a-row type="flex" justify="space-between" align="middle">

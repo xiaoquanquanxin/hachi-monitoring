@@ -102,13 +102,13 @@ export const syncRouteList = [
             },
 
         ],
-        redirect: '/community/accessStatistics'
+//        redirect: '/community/accessStatistics'
     },
     {
         meta: {
             hidden: true,
         },
         path: '*',
-        redirect: '/national',
+//        redirect: '/national',
     }
 ];
