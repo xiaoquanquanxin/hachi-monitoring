@@ -17,13 +17,13 @@
                 <a-col :span="16">
                     <div id="proportionOMajorRegionsBar"
                          data-msg="主要区域占比条形图"
-                         style="height: 180px;"
+                         style="height: 240px;"
                     >
                     </div>
                 </a-col>
             </a-row>
             <a-divider/>
-            <h2 class="card-component-title">其他地区占比</h2>
+            <div>其他地区占比</div>
             <br>
             <a-row type="flex" justify="space-between" align="middle" class="other-list"
                    v-for="(item,index) in otherRegionsData"
@@ -39,8 +39,20 @@
                     <span v-show="_item.name">{{(_item.value / otherAreaTotal *100).toFixed(0)}}%</span>
                 </a-col>
             </a-row>
+            <br>
             <a-divider/>
-            <h2 class="card-component-title">名族结构</h2>
+            <h2 class="card-component-title">民族结构</h2>
+            <a-divider/>
+            <a-row type="flex" justify="space-between" align="middle"
+                   class="rate-bar">
+                <div v-for="item in ethnicStructureData"
+                     :key="item.key"
+                     class="item-rate"
+                     :style="`background-color:${item.color};width:calc(${item.rate}% - 2px)`"
+                ></div>
+            </a-row>
+            <br>
+            <br>
             <a-row type="flex" justify="space-between" align="middle">
                 <a-col v-for="item in ethnicStructureData"
                        :key="item.key"
@@ -201,7 +213,7 @@
                 last.fill(0, lastLength);
             }
             console.log(this.otherRegionsData);
-            //  名族结构
+            //  民族结构
             this.ethnicStructureData = ethnicStructureData;
             const ethnicColorList = [c03FFCC, cBBC0F7, c929292, cFFFFFF,];
             const ethnicTotal = this.ethnicTotal;
@@ -240,7 +252,7 @@
     .area-of {
         //  其他区域
         .other-list {
-            line-height: 3em;
+            line-height: 3.2em;
             background-color: var(--c2C3034);
             margin-bottom: .6em;
             
@@ -257,7 +269,14 @@
             }
         }
         
-        //  名族结构
+        //  民族结构条
+        .rate-bar {
+            .item-rate {
+                height: 10px;
+            }
+        }
+        
+        //  民族结构
         .item-ethnic {
             padding: .8em 0 .8em 2em;
             border-right: 1px solid var(--border-color-split);
@@ -280,6 +299,7 @@
             }
             
             .item-rate {
+                line-height: 1.6em;
                 font-size: 36px;
             }
             
