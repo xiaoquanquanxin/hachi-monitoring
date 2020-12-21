@@ -41,7 +41,7 @@
                                     <a-col :span="20">{{item.name}}</a-col>
                                 </a-row>
                             </a-col>
-                            <a-col :span="9">
+                            <a-col :span="10">
                                 <a-row type="flex" justify="space-between" align="middle">
                                     <a-col :span="13">
                                         <a-row type="flex" justify="space-between" align="middle">
