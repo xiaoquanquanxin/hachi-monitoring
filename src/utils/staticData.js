@@ -1072,6 +1072,7 @@ export const typesOfIdentityData = [
     { key: 2, name: '租客', value: 2666, },
     { key: 3, name: '其他', value: 999, },
 ];
-
+//  年龄段性别分布
+export const ageDistributionBySexData = [];
 
 

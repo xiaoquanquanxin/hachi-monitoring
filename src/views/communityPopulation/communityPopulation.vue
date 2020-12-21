@@ -4,10 +4,13 @@
         <a-row type="flex" justify="space-between" align="middle">
             <a-col :span="16">
                 <a-row type="flex" justify="space-between" align="middle">
-                    <a-col :span="12">
+                    <a-col :span="12" v-show="false">
                         <CommunityDemographics data-ms="社区人口统计"/>
                         <br>
                         <TypesOfIdentity data-msg="身份类型"/>
+                    </a-col>
+                    <a-col :span="6">
+                        <AgeDistributionBySex data-msg="年龄段性别分布"/>
                     </a-col>
                 </a-row>
             </a-col>
@@ -21,6 +24,7 @@
     import CommonHeader from '@/components/commonHeader/commonHeader';
     import CommunityDemographics from '@/components/communityPopulation/communityDemographics.vue';
     import TypesOfIdentity from '@/components/communityPopulation/typesOfIdentity.vue';
+    import AgeDistributionBySex from '@/components/communityPopulation/ageDistributionBySex.vue';
 
     export default {
         name: 'communityPopulation',
@@ -30,6 +34,8 @@
             CommunityDemographics,
             //  身份类型
             TypesOfIdentity,
+            //  年龄段性别分布
+            AgeDistributionBySex,
         }
     };
 </script>
