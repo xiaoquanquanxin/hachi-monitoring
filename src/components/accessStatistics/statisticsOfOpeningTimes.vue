@@ -41,6 +41,7 @@
         axisTick,
         lineSeriesConfig,
     } from '../../utils/constants';
+    import { statisticsOfOpeningTimesData } from '../../utils/staticData';
 
     const option = {
         //  缩放
@@ -74,12 +75,16 @@
     };
     export default {
         name: 'statisticsOfOpeningTimes',
-        props: ['statisticsOfOpeningTimesData'],
         data(){
             return {
+                //  开门次数统计
+                statisticsOfOpeningTimesData: null,
                 //  激活的面板
                 activeIndex: 0,
             };
+        },
+        created(){
+            this.statisticsOfOpeningTimesData = statisticsOfOpeningTimesData;
         },
         mounted(){
             const data0 = option.series[0];
