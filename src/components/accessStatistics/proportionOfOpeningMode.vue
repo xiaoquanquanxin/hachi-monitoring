@@ -22,6 +22,7 @@
 <script>
     import { init } from 'echarts';
     import { c03FFCC, cFFFFFF, cCCCCCC, c25292E, c373A3E, c929292 } from '@/utils/constants';
+    import { proportionOfOpeningModeData } from '../../utils/staticData';
 
     const option = {
         tooltip: false,
@@ -56,8 +57,9 @@
                     rich: {
                         per: {
                             color: cFFFFFF,
-                            lineHeight: 24,
+                            lineHeight: 26,
                             verticalAlign: 'top',
+                            fontSize: 20
                         },
                         name: {
                             color: cCCCCCC,
@@ -88,11 +90,13 @@
     };
     export default {
         name: 'proportionOfOpeningMode',
-        props: ['proportionOfOpeningModeData'],
         data(){
-            return {};
+            return {
+                proportionOfOpeningModeData: null,
+            };
         },
         created(){
+            this.proportionOfOpeningModeData = proportionOfOpeningModeData;
             //  设置颜色
             const colorList = [c03FFCC, cFFFFFF, c929292];
             this.proportionOfOpeningModeData.forEach((item, index) => {
