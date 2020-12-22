@@ -5,9 +5,7 @@
             <a-col :span="16">
                 <a-row type="flex" justify="space-between" align="middle">
                     <a-col :span="12">
-                        <ProportionOfOpeningMode data-msg="开门方式占比"
-                                                 :proportionOfOpeningModeData="proportionOfOpeningModeData"
-                        />
+                        <ProportionOfOpeningMode data-msg="开门方式占比"/>
                     </a-col>
                     <a-col :span="12">
                         <ProportionOfPersonnelTypes data-msg="人员类型占比"
@@ -16,9 +14,7 @@
                     </a-col>
                 </a-row>
                 <br>
-                <StatisticsOfOpeningTimes data-msg="开门次数统计"
-                                          :statisticsOfOpeningTimesData="statisticsOfOpeningTimesData"
-                />
+                <StatisticsOfOpeningTimes data-msg="开门次数统计"/>
             </a-col>
             <a-col :span="8">
                 <RealTimeRecordOfAccessControl data-msg="门禁实时记录"
@@ -41,12 +37,8 @@
 
     //  数据
     import {
-        //  开门方式占比
-        proportionOfOpeningModeData,
         //  人员类型占比
         proportionOfPersonnelTypesData,
-        //  开门次数统计
-        statisticsOfOpeningTimesData,
         //  门禁实时记录
         realTimeRecordOfAccessControlData,
         //  门禁列表
@@ -70,12 +62,8 @@
         },
         data(){
             return {
-                //  开门方式占比
-                proportionOfOpeningModeData,
                 //  人员类型占比
                 proportionOfPersonnelTypesData,
-                //  开门次数统计
-                statisticsOfOpeningTimesData,
                 //  门禁实时记录
                 realTimeRecordOfAccessControlData,
                 //  门禁列表
