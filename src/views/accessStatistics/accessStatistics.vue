@@ -17,9 +17,7 @@
                 <StatisticsOfOpeningTimes data-msg="开门次数统计"/>
             </a-col>
             <a-col :span="8">
-                <RealTimeRecordOfAccessControl data-msg="门禁实时记录"
-                                               :realTimeRecordOfAccessControlData="realTimeRecordOfAccessControlData"
-                />
+                <RealTimeRecordOfAccessControl data-msg="门禁实时记录"/>
                 <AccessControlList data-msg="门禁列表"
                                    :accessControlListData="accessControlListData"
                 />
@@ -39,8 +37,6 @@
     import {
         //  人员类型占比
         proportionOfPersonnelTypesData,
-        //  门禁实时记录
-        realTimeRecordOfAccessControlData,
         //  门禁列表
         accessControlListData,
     } from '@/utils/staticData';
@@ -64,8 +60,6 @@
             return {
                 //  人员类型占比
                 proportionOfPersonnelTypesData,
-                //  门禁实时记录
-                realTimeRecordOfAccessControlData,
                 //  门禁列表
                 accessControlListData,
             };
