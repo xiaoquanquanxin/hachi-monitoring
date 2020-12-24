@@ -109,6 +109,6 @@ export const syncRouteList = [
             hidden: true,
         },
         path: '*',
-//        redirect: '/national',
+        redirect: '/national',
     }
 ];

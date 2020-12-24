@@ -4,6 +4,7 @@
                 :bordered="false">
             <a-row type="flex" justify="space-between" align="middle">
                 <div class="card-component-title">应收实收占比</div>
+                应收实收占比都展示，不拖动
                 <a-col :span="5">
                     <a-row type="flex" justify="space-between" align="middle">
                         <div v-for="(item,index) in tabList"

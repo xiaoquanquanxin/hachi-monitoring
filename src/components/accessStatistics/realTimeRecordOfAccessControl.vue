@@ -39,18 +39,22 @@
     </div>
 </template>
 <script>
+    import { realTimeRecordOfAccessControlData } from '../../utils/staticData';
+
     export default {
         name: 'RealTimeRecordOfAccessControl',
-        props: ['realTimeRecordOfAccessControlData'],
         data(){
             return {
                 timeout: null,
+                realTimeRecordOfAccessControlData: null,
             };
         },
         created(){
-            console.log(this.realTimeRecordOfAccessControlData);
+            this.realTimeRecordOfAccessControlData = realTimeRecordOfAccessControlData;
         },
-
+        methods: {
+        
+        }
     };
 </script>
 <style scoped lang="less">
@@ -66,7 +70,7 @@
             margin-bottom: 0;
             
             .list-item {
-                background-color: var(--c2D3237);
+                background-color: #25292E;
                 margin-bottom: 1.4em;
                 padding: 1em;
                 width: 100%;
@@ -85,6 +89,7 @@
                 }
                 
                 .item-type, .item-robot, .item-time {
+                    line-height: 2em;
                     color: var(--cB3B5B5);
                 }
                 

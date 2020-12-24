@@ -16,6 +16,7 @@
                 </a-col>
             </a-row>
             <a-divider/>
+            楼栋缴费占比123
             <div id="proportionOfBuildingPayment"
                  data-msg="楼栋缴费占比条形图"
                  style="height: 300px;"
